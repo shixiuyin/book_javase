@@ -486,12 +486,6 @@ Java虚拟机机制屏蔽了底层运行平台的差别，实现了“一次编�
 6.创建具体的java类
 
 选中项目，然后先建class。然后设置class名称
-  This text is {% em %}highlighted !{% endem %}
-  This text is {% em %}highlighted with **markdown**!{% endem %}
-  This text is {% em type="green" %}highlighted in green!{% endem %}
-  This text is {% em type="red" %}highlighted in red!{% endem %}
-  This text is {% em color="#ff0000" %}highlighted with a custom color!{% endem %}
-
 
 <link rel="stylesheet" href="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
 <script src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
