@@ -1,0 +1,1732 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第十三章:java集合框架二 · 我的一本书</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="wwwshibapi">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-xonokai.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-lightbox/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-fexa/fexa.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../day14/day14.html" />
+    
+    
+    <link rel="prev" href="../day12/day12.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+	<div class="header-inner">
+		<!-- LOGO -->
+		<div class="logo"></div>
+		<span class="title"></span>
+
+		<!-- Search -->
+		
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+
+		<!-- Nav -->
+		<ul class="header-nav">
+			<li>
+				<a href="http://www.baidu.com" target="_blank">简易教程</a>
+			</li><li>
+				<a href="http://www.baidu.com" target="_blank">API帮助文档</a>
+			</li><li>
+				<a href="http://www.baidu.com" target="_blank">高级java</a>
+			</li><li>
+				<a href="http://www.baidu.com" target="_blank">测试文档</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="book-summary">
+		<div class="book-summary-title">文档目录</div>
+		
+		
+		<nav role="navigation">
+			
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://www.baidu.com" target="_blank" class="custom-link">个性链接1</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://www.baidu.com" target="_blank" class="custom-link">个性链接2</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../day01/day01.html">
+            
+                <a href="../day01/day01.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    第一章:java语言概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    简介
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    环境变量
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    内容
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../day02/day02.html">
+            
+                <a href="../day02/day02.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    第二章:数据类型|运算符|变量
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    数据类型
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    运算符
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    变量
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../day03/day03.html">
+            
+                <a href="../day03/day03.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    第三章:分支语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../day04/day04.html">
+            
+                <a href="../day04/day04.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    第四章:循环语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../day05/day05.html">
+            
+                <a href="../day05/day05.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    第五章:数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../day06/day06.html">
+            
+                <a href="../day06/day06.html">
+            
+                    
+                        <b>1.7.</b>
+                    
+                    第六章:类和对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../day07/day07.html">
+            
+                <a href="../day07/day07.html">
+            
+                    
+                        <b>1.8.</b>
+                    
+                    第七章:封装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../day08/day08.html">
+            
+                <a href="../day08/day08.html">
+            
+                    
+                        <b>1.9.</b>
+                    
+                    第八章:继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../day09/day09.html">
+            
+                <a href="../day09/day09.html">
+            
+                    
+                        <b>1.10.</b>
+                    
+                    第九章:多态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../day10/day10.html">
+            
+                <a href="../day10/day10.html">
+            
+                    
+                        <b>1.11.</b>
+                    
+                    第十章:常用的类和对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../day11/day11.html">
+            
+                <a href="../day11/day11.html">
+            
+                    
+                        <b>1.12.</b>
+                    
+                    第十一章:java异常类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../day12/day12.html">
+            
+                <a href="../day12/day12.html">
+            
+                    
+                        <b>1.13.</b>
+                    
+                    第十二章:java集合框架一
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14" data-path="day13.html">
+            
+                <a href="day13.html">
+            
+                    
+                        <b>1.14.</b>
+                    
+                    第十三章:java集合框架二
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../day14/day14.html">
+            
+                <a href="../day14/day14.html">
+            
+                    
+                        <b>1.15.</b>
+                    
+                    第十四章:javaIO流一
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../day15/day15.html">
+            
+                <a href="../day15/day15.html">
+            
+                    
+                        <b>1.16.</b>
+                    
+                    第十五章:javaIO流二
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../day16/day16.html">
+            
+                <a href="../day16/day16.html">
+            
+                    
+                        <b>1.17.</b>
+                    
+                    第十六章:多线程一
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../day17/day17.html">
+            
+                <a href="../day17/day17.html">
+            
+                    
+                        <b>1.18.</b>
+                    
+                    第十七章:多线程二
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../day18/day18.html">
+            
+                <a href="../day18/day18.html">
+            
+                    
+                        <b>1.19.</b>
+                    
+                    第十八章:反射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../day19/day19.html">
+            
+                <a href="../day19/day19.html">
+            
+                    
+                        <b>1.20.</b>
+                    
+                    第十九章:枚举和注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../day20/day20.html">
+            
+                <a href="../day20/day20.html">
+            
+                    
+                        <b>1.21.</b>
+                    
+                    第二十章:网络编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+		</nav>
+		
+		
+	</div>
+
+	<!-- Content nav -->
+	<div class="book-anchor">
+		<div class="book-anchor-title">在这篇文章中:</div>
+		<div class="book-anchor-body">
+
+		</div>
+	</div>
+
+	<div class="book-body">
+		
+		<div class="body-inner">
+			
+			
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >第十三章:java集合框架二</a>
+    </h1>
+</div>
+
+
+
+
+			<div class="page-wrapper" tabindex="-1" role="main">
+				<div class="page-inner">
+					
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+					<section class="normal markdown-section">
+						
+						<html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#day12&#x96C6;&#x5408;&#x7B14;&#x8BB0;"><b></b>day12_&#x96C6;&#x5408;&#x7B14;&#x8BB0;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4E00;&#x3001;&#x56DE;&#x987E;"><b></b>&#x4E00;&#x3001;&#x56DE;&#x987E;</a></li><li><span class="title-icon "></span><a href="#&#x4E8C;&#x3001;java&#x96C6;&#x5408;"><b></b>&#x4E8C;&#x3001;java&#x96C6;&#x5408;</a></li><li><span class="title-icon "></span><a href="#&#x4E09;&#x3001;collection"><b></b>&#x4E09;&#x3001;Collection</a></li><ul><li><span class="title-icon "></span><a href="#31&#x8FED;&#x4EE3;&#x5668;"><b></b>3.1&#x8FED;&#x4EE3;&#x5668;</a></li></ul><li><span class="title-icon "></span><a href="#&#x56DB;&#x3001;list"><b></b>&#x56DB;&#x3001;List</a></li><ul><li><span class="title-icon "></span><a href="#41-arraylist"><b></b>4.1 ArrayList</a></li><li><span class="title-icon "></span><a href="#42-vector"><b></b>4.2 Vector</a></li><li><span class="title-icon "></span><a href="#43-linkedlist"><b></b>4.3 LinkedList</a></li><li><span class="title-icon "></span><a href="#44&#x6CDB;&#x578B;"><b></b>4.4.&#x6CDB;&#x578B;</a></li><li><span class="title-icon "></span><a href="#45-&#x904D;&#x5386;&#x96C6;&#x5408;&#x7684;&#x65B9;&#x5F0F;"><b></b>4.5 &#x904D;&#x5386;&#x96C6;&#x5408;&#x7684;&#x65B9;&#x5F0F;</a></li></ul><li><span class="title-icon "></span><a href="#&#x4E94;&#x3001;set&#x96C6;&#x5408;"><b></b>&#x4E94;&#x3001;Set&#x96C6;&#x5408;</a></li><ul><li><span class="title-icon "></span><a href="#51-hashset"><b></b>5.1 HashSet</a></li><li><span class="title-icon "></span><a href="#52-linkedhashset"><b></b>5.2 LinkedHashSet</a></li><li><span class="title-icon "></span><a href="#53-treeset"><b></b>5.3 TreeSet</a></li></ul><li><span class="title-icon "></span><a href="#&#x516D;&#x3001;map&#x96C6;&#x5408;"><b></b>&#x516D;&#x3001;Map&#x96C6;&#x5408;</a></li><ul><li><span class="title-icon "></span><a href="#61-hashmap"><b></b>6.1 HashMap</a></li><li><span class="title-icon "></span><a href="#62-hashtable"><b></b>6.2 HashTable</a></li><li><span class="title-icon "></span><a href="#63-linkedhashmap"><b></b>6.3 LinkedHashMap</a></li><li><span class="title-icon "></span><a href="#64-treemap"><b></b>6.4 TreeMap</a></li><li><span class="title-icon "></span><a href="#65-properties"><b></b>6.5 Properties</a></li></ul><li><span class="title-icon "></span><a href="#&#x4E03;&#x3001;collections"><b></b>&#x4E03;&#x3001;Collections</a></li></ul></ul></div><ul>
+<li><div><a href="#&#x4E00;&#x3001;&#x56DE;&#x987E;">&#x4E00;&#x3001;&#x56DE;&#x987E;</a><i></i></div></li>
+<li><div><a href="#&#x4E8C;&#x3001;java&#x96C6;&#x5408;">&#x4E8C;&#x3001;java&#x96C6;&#x5408;</a><i></i></div></li>
+<li><div><a href="#&#x4E09;&#x3001;collection">&#x4E09;&#x3001;Collection</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#31&#x8FED;&#x4EE3;&#x5668;">3.1&#x8FED;&#x4EE3;&#x5668;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x56DB;&#x3001;list">&#x56DB;&#x3001;List</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#41-arraylist">4.1 ArrayList</a><i></i></div></li>
+<li><div><a href="#42-vector">4.2 Vector</a><i></i></div></li>
+<li><div><a href="#43-linkedlist">4.3 LinkedList</a><i></i></div></li>
+<li><div><a href="#44&#x6CDB;&#x578B;">4.4.&#x6CDB;&#x578B;</a><i></i></div></li>
+<li><div><a href="#45-&#x904D;&#x5386;&#x96C6;&#x5408;&#x7684;&#x65B9;&#x5F0F;">4.5 &#x904D;&#x5386;&#x96C6;&#x5408;&#x7684;&#x65B9;&#x5F0F;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x4E94;&#x3001;set&#x96C6;&#x5408;">&#x4E94;&#x3001;Set&#x96C6;&#x5408;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#51-hashset">5.1 HashSet</a><i></i></div></li>
+<li><div><a href="#52-linkedhashset">5.2 LinkedHashSet</a><i></i></div></li>
+<li><div><a href="#53-treeset">5.3 TreeSet</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#1treeset&#x6DFB;&#x52A0;&#x5BF9;&#x8C61;">1.TreeSet&#x6DFB;&#x52A0;&#x5BF9;&#x8C61;</a><i></i></div></li>
+<li><div><a href="#2&#x81EA;&#x5B9A;&#x4E49;&#x6BD4;&#x8F83;&#x5668;">2.&#x81EA;&#x5B9A;&#x4E49;&#x6BD4;&#x8F83;&#x5668;</a><i></i></div></li>
+</ul></li>
+</ul></li>
+<li><div><a href="#&#x516D;&#x3001;map&#x96C6;&#x5408;">&#x516D;&#x3001;Map&#x96C6;&#x5408;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#61-hashmap">6.1 HashMap</a><i></i></div></li>
+<li><div><a href="#62-hashtable">6.2 HashTable</a><i></i></div></li>
+<li><div><a href="#63-linkedhashmap">6.3 LinkedHashMap</a><i></i></div></li>
+<li><div><a href="#64-treemap">6.4 TreeMap</a><i></i></div></li>
+<li><div><a href="#65-properties">6.5 Properties</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x4E03;&#x3001;collections">&#x4E03;&#x3001;Collections</a><i></i></div></li>
+</ul>
+
+
+<h1 id="day12&#x96C6;&#x5408;&#x7B14;&#x8BB0;"><a name="day12&#x96C6;&#x5408;&#x7B14;&#x8BB0;" class="anchor-navigation-ex-anchor" href="#day12&#x96C6;&#x5408;&#x7B14;&#x8BB0;"><i class="fa fa-link" aria-hidden="true"></i></a>day12_&#x96C6;&#x5408;&#x7B14;&#x8BB0;</h1>
+<h2 id="&#x4E00;&#x3001;&#x56DE;&#x987E;"><a name="&#x4E00;&#x3001;&#x56DE;&#x987E;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;&#x56DE;&#x987E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x3001;&#x56DE;&#x987E;</h2>
+<pre class="language-"><code class="lang-xml">1.&#x5F02;&#x5E38;
+    java&#x8FD0;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#x53D1;&#x751F;&#x7684;&#x4E0D;&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#xFF0C;&#x79F0;&#x4E3A;&#x5F02;&#x5E38;;
+2.&#x5F02;&#x5E38;&#x5904;&#x7406;&#x7684;&#x673A;&#x5236;
+    a.&#x629B;&#x6293;&#x6A21;&#x578B;
+3.&#x5F02;&#x5E38;&#x7684;&#x5206;&#x7C7B;&#x5C42;&#x6B21;
+    Throwable:&#x6240;&#x6709;&#x5F02;&#x5E38;&#x548C;&#x9519;&#x8BEF;&#x7C7B;&#x7684;&#x7236;&#x7C7B;
+        Exception:&#x5927;&#x90E8;&#x5206;&#x5F02;&#x5E38;&#x90FD;&#x662F;&#x7531;&#x7A0B;&#x5E8F;&#x5458;&#x4EE3;&#x7801;&#x4E0D;&#x89C4;&#x8303;|&#x95EE;&#x9898;&#x9020;&#x6210;
+            RuntimeException:&#x8FD0;&#x884C;&#x65F6;&#x5F02;&#x5E38;,&#x5FC5;&#x987B;&#x5728;&#x8FD0;&#x884C;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x624D;&#x4F1A;&#x53D1;&#x751F;&#x7684;&#x5F02;&#x5E38;
+                 ArithmeticException:
+                 ClassCastException:
+                 IndexOutOfBoundsException:
+                 NullPointerException:
+            &#x975E;&#x8FD0;&#x884C;&#x65F6;&#x5F02;&#x5E38;|&#x5F3A;&#x5236;&#x5F02;&#x5E38;:
+            IOException:
+            SQLException:
+
+        Error:&#x9519;&#x8BEF;&#xFF0C;&#x7A0B;&#x5E8F;&#x5458;&#x65E0;&#x6CD5;&#x5904;&#x7406;
+4.try...catch...finally
+    a.try:&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x7684;&#x4EE3;&#x7801;&#x5757;;
+    b.catch:&#x6355;&#x83B7;try&#x4E2D;&#x51FA;&#x73B0;&#x7684;&#x5F02;&#x5E38;
+        i:catch&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x591A;&#x4E2A;&#x5F02;&#x5E38;&#x7C7B;&#x578B;;
+        ii:&#x5B50;&#x7C7B;&#x7684;&#x5F02;&#x5E38;&#x7C7B;&#x578B;&#xFF0C;&#x5199;&#x5728;&#x7236;&#x7C7B;&#x5F02;&#x5E38;&#x7684;catch&#x5757;&#x524D;&#x9762;
+        iii:exception&#x662F;&#x6240;&#x4EE5;&#x5F02;&#x5E38;&#x7C7B;&#x7684;&#x7236;&#x7C7B;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x5904;&#x7406;&#x6240;&#x6709;&#x7684;&#x5F02;&#x5E38;&#x7C7B;;
+    c.finally:&#x662F;&#x5426;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x540D;&#xFF0C;&#x6700;&#x7EC8;&#x90FD;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#x7684;&#x8BED;&#x53E5;&#x5757;
+        finally&#x662F;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#x7684;,&#x4E00;&#x822C;&#x4F7F;&#x7528;&#x5B83;&#x6765;&#x5173;&#x95ED;&#x8D44;&#x6E90;&#xFF0C;&#x505A;&#x4E00;&#x4E9B;&#x5584;&#x540E;&#x7684;&#x5904;&#x7406;;
+
+5.throws,throw
+    throws:
+        a.&#x4E0D;&#x4F7F;&#x7528;try...catch&#x6355;&#x83B7;&#x5F02;&#x5E38;&#xFF0C;&#x76F4;&#x63A5;&#x5C06;&#x5F02;&#x5E38;&#x5411;&#x4E0A;&#x629B;&#x51FA;;
+        b.&#x5B9A;&#x4E49;&#x5728;&#x65B9;&#x6CD5;&#x540D;&#x7684;&#x540E;&#x9762;   public void method() throws &#x5F02;&#x5E38;&#x7C7B;&#x578B;{}
+    throw:
+        a.&#x4E3B;&#x52A8;&#x7684;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x7684;&#x7C7B;&#x578B;(&#x5236;&#x9020;&#x5F02;&#x5E38;);
+        b.&#x5728;&#x65B9;&#x6CD5;&#x4F53;&#x7684;&#x5185;&#x90E8;&#x4F7F;&#x7528;;
+
+6.&#x81EA;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;
+    &#x6839;&#x636E;&#x9700;&#x6C42;&#x5B9A;&#x4E49;&#x7B26;&#x53F7;&#x81EA;&#x5DF1;&#x8981;&#x6C42;&#x7684;&#x5F02;&#x5E38;&#x7C7B;;
+    a.&#x81EA;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;&#x7C7B;&#x5FC5;&#x987B;&#x7EE7;&#x627F;exception&#x53CA;&#x5176;&#x5B50;&#x7C7B;;
+    b.&#x5B9A;&#x4E49;&#x6709;&#x53C2;&#x6570;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF0C;&#x4F20;&#x9012;&#x9519;&#x8BEF;&#x7684;&#x663E;&#x793A;&#x4FE1;&#x606F;(message)
+</code></pre>
+<h2 id="&#x4E8C;&#x3001;java&#x96C6;&#x5408;"><a name="&#x4E8C;&#x3001;java&#x96C6;&#x5408;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;java&#x96C6;&#x5408;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x3001;java&#x96C6;&#x5408;</h2>
+<pre class="language-"><code class="lang-xml">&#x5B58;&#x50A8;&#x7684;&#x4ECB;&#x8D28;&#xFF1A;
+    &#x53D8;&#x91CF;:&#x5355;&#x4E2A;&#x7C7B;&#x578B;&#x5355;&#x4E2A;&#x53EF;&#x53D8;&#x7684;&#x6570;&#x636E;
+    &#x5E38;&#x91CF;:&#x5355;&#x4E2A;&#x7C7B;&#x578B;&#x5355;&#x4E2A;&#x4E0D;&#x53EF;&#x53D8;&#x7684;&#x6570;&#x636E;
+    &#x6570;&#x7EC4;:&#x5355;&#x4E2A;&#x7C7B;&#x578B;&#x7684;&#x591A;&#x4E2A;&#x6570;&#x636E;,&#x6570;&#x7EC4;&#x7684;&#x957F;&#x5EA6;&#x4E0D;&#x53EF;&#x53D8;;
+    &#x96C6;&#x5408;:&#x591A;&#x4E2A;&#x7C7B;&#x578B;&#x7684;&#x591A;&#x4E2A;&#x6570;&#x636E;,&#x957F;&#x5EA6;&#x53EF;&#x53D8;&#x7684;
+
+1.&#x96C6;&#x5408;&#x7684;&#x6982;&#x8FF0;
+    a.Java &#x96C6;&#x5408;&#x5C31;&#x50CF;&#x4E00;&#x79CD;&#x5BB9;&#x5668;&#xFF0C;&#x53EF;&#x4EE5;&#x628A;&#x591A;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x5F15;&#x7528;&#x653E;&#x5165;&#x5BB9;&#x5668;&#x4E2D;&#x3002;
+    b.Java &#x96C6;&#x5408;&#x7C7B;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x6570;&#x91CF;&#x4E0D;&#x7B49;&#x7684;&#x591A;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;&#xFF08;&#x9ED8;&#x8BA4;&#x53EF;&#x4EE5;&#x5B58;&#x5728;&#x4EFB;&#x610F;&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x8C61;&#xFF09;
+    c.Java &#x96C6;&#x5408;&#x53EF;&#x5206;&#x4E3A; Set&#x3001;List &#x548C; Map &#x4E09;&#x79CD;&#x4F53;&#x7CFB;
+        Set:&#x65E0;&#x5E8F;&#xFF0C;&#x4E0D;&#x53EF;&#x91CD;&#x590D;
+        List:&#x6709;&#x5E8F;&#xFF0C;&#x53EF;&#x91CD;&#x590D;
+        Map:&#x5177;&#x6709;&#x6620;&#x5C04;&#x5173;&#x7CFB;&#x7684;&#x96C6;&#x5408;(key-value)
+    d.jdk5&#x4E4B;&#x524D;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x96C6;&#x5408;&#x90FD;&#x53EF;&#x4EE5;&#x5B58;&#x653E;Object&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;------&gt;&#x5BFC;&#x81F4;&#x6570;&#x7EC4;&#x4E2D;&#x5177;&#x4F53;&#x7684;&#x5143;&#x7D20;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E22;&#x5931;(&#x5F3A;&#x8F6C;)
+      jdk5&#x4E4B;&#x540E;&#xFF0C;&#x5F15;&#x5165;&#x4E86;&#x6CDB;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x96C6;&#x5408;&#x8BB0;&#x4F4F;&#x81EA;&#x5DF1;&#x662F;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;;----&gt;List<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Person</span><span class="token punctuation">&gt;</span></span>
+
+2.java&#x96C6;&#x5408;&#x7684;&#x67B6;&#x6784;&#x56FE;
+    Collection:
+          List:ArrayList,LinkedList
+          Set:HashSet,TreeSet
+    Map:
+          HashMap
+          TreeMap
+          HashTable
+</code></pre>
+<p><a href="img/1553562896686.png" data-lightbox="df9c154c-7cee-4394-97ee-232ab8801a06" data-title="1553562896686"><img src="img/1553562896686.png" alt="1553562896686"></a></p>
+<h2 id="&#x4E09;&#x3001;collection"><a name="&#x4E09;&#x3001;collection" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x3001;collection"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E09;&#x3001;Collection</h2>
+<pre class="language-"><code class="lang-xml">1.&#x6982;&#x8FF0;
+    a.Collection &#x63A5;&#x53E3;&#x662F; List&#x3001;Set &#x548C; Queue &#x63A5;&#x53E3;&#x7684;&#x7236;&#x63A5;&#x53E3;
+    b.&#x8BE5;&#x63A5;&#x53E3;&#x91CC;&#x5B9A;&#x4E49;&#x7684;&#x65B9;&#x6CD5;&#x65E2;&#x53EF;&#x7528;&#x4E8E;&#x64CD;&#x4F5C; Set &#x96C6;&#x5408;&#xFF0C;&#x4E5F;&#x53EF;&#x7528;&#x4E8E;&#x64CD;&#x4F5C; List &#x548C; Queue &#x96C6;&#x5408;
+2.Collection&#x5E38;&#x7528;&#x7684;&#x65B9;&#x6CD5;
+</code></pre>
+<p><a href="img/1553564275546.png" data-lightbox="aac685a6-cbff-4392-8ade-516ccca7bceb" data-title="1553564275546"><img src="img/1553564275546.png" alt="1553564275546"></a></p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token comment">// &#x521B;&#x5EFA;&#x4E86;Collection&#x7684;&#x5B50;&#x7C7B;&#x5BF9;&#x8C61;(&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x4E5F;&#x53EF;&#x4EE5;)</span>
+        <span class="token class-name">Collection</span> collection <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Collection</span> collection2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 1.&#x6DFB;&#x52A0;&#x5143;&#x7D20; add</span>
+        collection<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;hello world&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        collection<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;hello java&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        collection<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// collection.add(false);</span>
+
+        collection2<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;hello world&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        collection2<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// collection.addAll(c); //&#x96C6;&#x5408;&#x6DFB;&#x52A0;&#x96C6;&#x5408;</span>
+
+        <span class="token comment">// &#x79FB;&#x9664;</span>
+        <span class="token comment">// collection.clear();</span>
+        <span class="token comment">// &#x662F;&#x5426;&#x5305;&#x542B;&#x5143;&#x7D20;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x662F;&#x5426;&#x5305;&#x542B;:&quot;</span> <span class="token operator">+</span> collection<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token string">&quot;hello javaxxx&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// collection.containsAll(c);//&#x662F;&#x5426;&#x5305;&#x542B;&#x6574;&#x4E2A;&#x96C6;&#x5408;</span>
+
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x662F;&#x5426;&#x76F8;&#x7B49;:&quot;</span> <span class="token operator">+</span> collection<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>collection2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;==:&quot;</span> <span class="token operator">+</span> <span class="token punctuation">(</span>collection <span class="token operator">==</span> collection2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;hashCode:&quot;</span> <span class="token operator">+</span> collection<span class="token punctuation">.</span><span class="token function">hashCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;hashCode:&quot;</span> <span class="token operator">+</span> collection2<span class="token punctuation">.</span><span class="token function">hashCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x662F;&#x5426;&#x4E3A;&#x7A7A;:&quot;</span> <span class="token operator">+</span> collection<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x662F;&#x5426;&#x79FB;&#x9664;&#x6210;&#x529F;:&quot;</span> <span class="token operator">+</span> collection<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token string">&quot;hello worldxxx&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x662F;&#x5426;&#x5B58;&#x5728;&#x5305;&#x542B;&#x5173;&#x7CFB;:&quot;</span> <span class="token operator">+</span> collection<span class="token punctuation">.</span><span class="token function">retainAll</span><span class="token punctuation">(</span>collection2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>collection<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>collection2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x96C6;&#x5408;&#x5143;&#x7D20;&#x7684;&#x5927;&#x5C0F;:&quot;</span> <span class="token operator">+</span> collection<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// &#x8F6C;&#x6362;&#x4E3A;&#x6570;&#x7EC4;</span>
+        <span class="token class-name">Object</span><span class="token punctuation">[</span><span class="token punctuation">]</span> array <span class="token operator">=</span> collection<span class="token punctuation">.</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name">Object</span> object <span class="token operator">:</span> array<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>object<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span>
+</code></pre>
+<h3 id="31&#x8FED;&#x4EE3;&#x5668;"><a name="31&#x8FED;&#x4EE3;&#x5668;" class="anchor-navigation-ex-anchor" href="#31&#x8FED;&#x4EE3;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1&#x8FED;&#x4EE3;&#x5668;</h3>
+<pre class="language-"><code class="lang-xml">&#x4F5C;&#x7528;&#xFF1A;&#x5C31;&#x662F;&#x7528;&#x6765;&#x83B7;&#x53D6;&#x96C6;&#x5408;&#x6216;&#x8005;&#x6570;&#x7EC4;&#x7684;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x3002;&#x7C7B;&#x4F3C;for&#x5FAA;&#x73AF;
+&#x521B;&#x5EFA;&#x65B9;&#x6CD5;:
+    &#x5FC5;&#x987B;&#x901A;&#x8FC7;&#x96C6;&#x5408;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x8FED;&#x4EE3;&#x5668;&#x3002;
+    Iterator iterator = collection.iterator();
+
+&#x5BF9; collection &#x8FDB;&#x884C;&#x8FED;&#x4EE3;&#x7684;&#x8FED;&#x4EE3;&#x5668;
+&#x5E38;&#x7528;&#x7684;&#x65B9;&#x6CD5;:
+    hasNext():&#x5224;&#x65AD;&#x662F;&#x5426;&#x6709;&#x5143;&#x7D20;&#x53EF;&#x53D6;
+    next():&#x4F7F;&#x7528;&#x524D;&#x8FDB;&#x884C;&#x5224;&#x65AD;&#xFF0C;&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7684;&#x5143;&#x7D20;
+</code></pre>
+<p><a href="img/1553566341540.png" data-lightbox="8acb6054-7261-4752-8fd4-d95f1649c8e1" data-title="1553566341540"><img src="img/1553566341540.png" alt="1553566341540"></a></p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo02</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Collection</span> collection <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 1.&#x6DFB;&#x52A0;&#x5143;&#x7D20; add</span>
+        collection<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;hello world&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        collection<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;hello java&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        collection<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        collection<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 2.&#x904D;&#x5386;&#x96C6;&#x5408;</span>
+        <span class="token class-name">Iterator</span> iterator <span class="token operator">=</span> collection<span class="token punctuation">.</span><span class="token function">iterator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x83B7;&#x53D6;&#x8FED;&#x4EE3;&#x5668;&#xFF0C;&#x7528;&#x4E8E;&#x8FED;&#x4EE3;&#x5F53;&#x524D;&#x96C6;&#x5408;</span>
+
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>iterator<span class="token punctuation">.</span><span class="token function">hasNext</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// &#x5224;&#x65AD;&#x662F;&#x5426;&#x8FD8;&#x6709;&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;</span>
+            <span class="token class-name">Object</span> next <span class="token operator">=</span> iterator<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5BF9;&#x5E94;&#x7684;&#x503C;:&quot;</span> <span class="token operator">+</span> next<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            iterator<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x79FB;&#x9664;&#x83B7;&#x53D6;&#x7684;&#x5143;&#x7D20;</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>collection<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x589E;&#x5F3A;for&#x5E95;&#x5C42;&#x5C31;&#x662F;&#x8FED;&#x4EE3;&#x5668;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo03</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Collection</span> collection <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 1.&#x6DFB;&#x52A0;&#x5143;&#x7D20; add</span>
+        collection<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;hello world&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        collection<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;hello java&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        collection<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        collection<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">/*
+         * &#x589E;&#x5F3A;for&#x5FAA;&#x73AF;
+         */</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name">Object</span> obj <span class="token operator">:</span> collection<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="&#x56DB;&#x3001;list"><a name="&#x56DB;&#x3001;list" class="anchor-navigation-ex-anchor" href="#&#x56DB;&#x3001;list"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56DB;&#x3001;List</h2>
+<pre class="language-"><code class="lang-xml">1.&#x6982;&#x8FF0;
+    a.&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x6709;&#x5E8F;&#x3001;&#x4E14;&#x53EF;&#x91CD;&#x590D;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x90FD;&#x6709;&#x5176;&#x5BF9;&#x5E94;&#x7684;&#x987A;&#x5E8F;&#x7D22;&#x5F15;
+    b.List &#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x91CD;&#x590D;&#x5143;&#x7D20;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7D22;&#x5F15;&#x6765;&#x8BBF;&#x95EE;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x7684;&#x96C6;&#x5408;&#x5143;&#x7D20;&#x3002;
+    c.List &#x9ED8;&#x8BA4;&#x6309;&#x5143;&#x7D20;&#x7684;&#x6DFB;&#x52A0;&#x987A;&#x5E8F;&#x8BBE;&#x7F6E;&#x5143;&#x7D20;&#x7684;&#x7D22;&#x5F15;&#x3002;
+    d.List &#x96C6;&#x5408;&#x91CC;&#x6DFB;&#x52A0;&#x4E86;&#x4E00;&#x4E9B;&#x6839;&#x636E;&#x7D22;&#x5F15;&#x6765;&#x64CD;&#x4F5C;&#x96C6;&#x5408;&#x5143;&#x7D20;&#x7684;&#x65B9;&#x6CD5;
+    &#x7B80;&#x5355;&#x6765;&#x8BF4;:List&#x662F;&#x652F;&#x6301;&#x6709;&#x5E8F;&#xFF0C;&#x53EF;&#x91CD;&#x590D;&#x7684;&#x5143;&#x7D20;;
+
+2.List&#x63A5;&#x53E3;&#x65B0;&#x589E;&#x7684;&#x65B9;&#x6CD5;:
+    void add(int index, Object ele)
+    boolean addAll(int index, Collection eles)
+    Object get(int index)
+    int indexOf(Object obj)
+    int lastIndexOf(Object obj)
+    Object remove(int index)
+    Object set(int index, Object ele)
+    List subList(int fromIndex, int toIndex)
+Collection&#x4E2D;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;List&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x3002;&#x56E0;&#x4E3A;Collection&#x662F;List&#x7236;&#x63A5;&#x53E3;;
+
+3.List&#x63A5;&#x53E3;&#x4E3B;&#x8981;&#x5305;&#x542B;&#x4E86;&#x4E09;&#x4E2A;&#x5B9E;&#x73B0;&#x7C7B;
+    a.ArrayList &#x4F7F;&#x7528;&#x6570;&#x7EC4;&#x5B9E;&#x73B0;,&#x7EBF;&#x7A0B;&#x4E0D;&#x540C;&#x6B65;
+    b.LinkedList &#x4F7F;&#x7528;&#x94FE;&#x8868;&#x5B9E;&#x73B0;,&#x7EBF;&#x7A0B;&#x4E0D;&#x540C;&#x6B65;
+    c.Vector &#x4F7F;&#x7528;&#x6570;&#x7EC4;&#x5B9E;&#x73B0;,&#x7EBF;&#x7A0B;&#x540C;&#x6B65;
+</code></pre>
+<pre class="language-"><code class="lang-java"><span class="token comment">/**
+ * List&#x65B9;&#x6CD5;&#x7684;&#x4F7F;&#x7528;
+ * 
+ * @author THINK
+ *
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo04</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// List&#x5728; Collection&#x57FA;&#x7840;&#x4E0A;&#x6DFB;&#x52A0;&#x4E86; &#x64CD;&#x4F5C;index&#x7D22;&#x5F15;&#x7684;&#x65B9;&#x6CD5;</span>
+        <span class="token class-name">List</span> list <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;b&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;3&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;c&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;2&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;c&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// &#x7ED9;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x6DFB;&#x52A0;&#x5143;&#x7D20;</span>
+        list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&quot;java&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x7684;&#x5143;&#x7D20;|&#x7C7B;&#x4F3C;&#x6570;&#x7EC4;</span>
+        <span class="token class-name">Object</span> object <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x4E0B;&#x6807;&#x4ECE;0&#x5F00;&#x59CB;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x4E0B;&#x6807;&#x5BF9;&#x5E94;&#x7684;&#x5185;&#x5BB9;:&quot;</span> <span class="token operator">+</span> object<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// &#x6839;&#x636E;&#x5143;&#x7D20;&#x83B7;&#x53D6;&#x4E0B;&#x6807;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#x8FD4;&#x56DE;-1</span>
+        <span class="token keyword">int</span> indexOf <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">&quot;c&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> last <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">lastIndexOf</span><span class="token punctuation">(</span><span class="token string">&quot;c&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;c&#x6240;&#x5728;&#x7684;&#x4F4D;&#x7F6E;:&quot;</span> <span class="token operator">+</span> indexOf<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x51FA;&#x73B0;&#x7684;&#x4F4D;&#x7F6E;:&quot;</span> <span class="token operator">+</span> last<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// &#x79FB;&#x9664;</span>
+        list<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token string">&quot;c&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x79FB;&#x9664;&#x5143;&#x7D20;</span>
+        <span class="token comment">// list.remove(&quot;c&quot;);</span>
+        list<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x5982;&#x679C;&#x662F;int&#x7C7B;&#x578B;&#xFF0C;&#x79FB;&#x9664;&#x7684;&#x5C31;&#x662F;&#x96C6;&#x5408;&#x7684;&#x4E0B;&#x6807;</span>
+
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// &#x66FF;&#x6362;</span>
+        list<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">&quot;hello world&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// &#x622A;&#x53D6;&#x5B50;&#x96C6;&#x5408;&#xFF08;&#x5305;&#x62EC;&#x524D;&#x9762;&#xFF0C;&#x4E0D;&#x5305;&#x62EC;&#x540E;&#x9762;&#xFF09;</span>
+        <span class="token class-name">List</span> subList <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">subList</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>subList<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="41-arraylist"><a name="41-arraylist" class="anchor-navigation-ex-anchor" href="#41-arraylist"><i class="fa fa-link" aria-hidden="true"></i></a>4.1 ArrayList</h3>
+<pre class="language-"><code class="lang-xml">1.&#x6982;&#x8FF0;
+    a.&#x5E95;&#x5C42;&#x4F7F;&#x7528;&#x7684;&#x662F;Object&#x6570;&#x7EC4;,&#x62E5;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x4E0B;&#x6807;;
+    b.&#x6240;&#x6709;&#x67E5;&#x8BE2;&#x6548;&#x7387;&#x9AD8;(index)&#xFF0C;&#x6DFB;&#x52A0;&#x548C;&#x5220;&#x9664;&#x6548;&#x7387;&#x4F4E;(&#x91CD;&#x5199;&#x7EF4;&#x62A4;index,&#x6392;&#x5E8F;)&#x3002;
+    c.&#x7EBF;&#x7A0B;&#x4E0D;&#x540C;&#x6B65;&#xFF0C;&#x7EBF;&#x7A0B;&#x4E0D;&#x5B89;&#x5168;&#x3002;&#x6548;&#x7387;&#x9AD8;;
+
+
+2.length&#x5C5E;&#x6027;,length(),&#x548C;size()&#x5206;&#x522B;&#x5728;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x4F7F;&#x7528;:
+    length:&#x6570;&#x7EC4;&#x83B7;&#x53D6;&#x957F;&#x5EA6;&#x4F7F;&#x7528;length;
+    length():String&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F7F;&#x7528;
+    size():&#x96C6;&#x5408;&#x7684;&#x65F6;&#x5019;&#x4F7F;&#x7528;
+
+        int[] arr = { 1, 2, 3, 4, 5, 6 };
+        System.out.println(&quot;&#x96C6;&#x5408;&#x7684;&#x957F;&#x5EA6;:&quot; + arrayList.size());
+        System.out.println(&quot;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x957F;&#x5EA6;:&quot; + (&quot;aaaa&quot;).length());
+        System.out.println(&quot;&#x6570;&#x7EC4;&#x7684;&#x957F;&#x5EA6;:&quot; + arr.length);
+</code></pre>
+<p><a href="img/1553578969139.png" data-lightbox="4e41b824-bf59-4ca8-8b17-bbb4c1298143" data-title="1553578969139"><img src="img/1553578969139.png" alt="1553578969139"></a></p>
+<p><a href="img/1553578994082.png" data-lightbox="aeb51f93-46e7-4751-899f-9685ef2e96cc" data-title="1553578994082"><img src="img/1553578994082.png" alt="1553578994082"></a></p>
+<pre class="language-"><code class="lang-java"><span class="token comment">// &#x901A;&#x8FC7; Arrays.asList&#x521B;&#x5EFA;&#x56FA;&#x5B9A;&#x957F;&#x5EA6;&#x7684;&#x96C6;&#x5408;</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token comment">//&#x8FD4;&#x56DE;&#x56FA;&#x5B9A;&#x957F;&#x5EA6;&#x7684;&#x96C6;&#x5408;</span>
+        <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> asList <span class="token operator">=</span> <span class="token class-name">Arrays</span><span class="token punctuation">.</span><span class="token function">asList</span><span class="token punctuation">(</span><span class="token string">&quot;zhangsan&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;lisi&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;wangwu&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>asList<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+
+    <span class="token punctuation">}</span>
+</code></pre>
+<h3 id="42-vector"><a name="42-vector" class="anchor-navigation-ex-anchor" href="#42-vector"><i class="fa fa-link" aria-hidden="true"></i></a>4.2 Vector</h3>
+<pre class="language-"><code class="lang-xml">1.&#x6982;&#x8FF0;
+    a.&#x662F;ArrayList&#x7684;&#x5386;&#x53F2;&#x7248;&#x672C;&#xFF0C;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x4E00;&#x6837;;
+    b.Vector&#x5C5E;&#x4E8E;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x3002;&#x6267;&#x884C;&#x6548;&#x7387;&#x6162;
+&#x4EE5;&#x540E;&#x4E0D;&#x4F1A;&#x7528;&#x3002;
+</code></pre>
+<h3 id="43-linkedlist"><a name="43-linkedlist" class="anchor-navigation-ex-anchor" href="#43-linkedlist"><i class="fa fa-link" aria-hidden="true"></i></a>4.3 LinkedList</h3>
+<pre class="language-"><code class="lang-xml">1.&#x6982;&#x8FF0;
+    a.LinkedList&#x662F;&#x57FA;&#x4E8E;&#x53CC;&#x5411;&#x94FE;&#x8868;&#x5B9E;&#x73B0;
+    b.&#x67E5;&#x8BE2;&#x7684;&#x6548;&#x7387;&#x8F83;&#x6162;&#xFF0C;&#x4F46;&#x662F;&#x63D2;&#x5165;&#x548C;&#x5220;&#x9664;&#x7684;&#x6548;&#x7387;&#x9AD8;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x7EF4;&#x62A4;&#x552F;&#x4E00;&#x524D;&#x9A71;&#x548C;&#x540E;&#x7EE7;&#x5C31;&#x53EF;&#x4EE5;;&#x4E0D;&#x9700;&#x8981;&#x7BA1;&#x7406;&#x5176;&#x4ED6;&#x7684;&#x5143;&#x7D20;
+    c.&#x7EBF;&#x7A0B;&#x4E0D;&#x540C;&#x6B65;&#xFF0C;&#x7EBF;&#x7A0B;&#x4E0D;&#x5B89;&#x5168;&#x3002;&#x6548;&#x7387;&#x9AD8;;
+
+&#x63D0;&#x4F9B;&#x51E0;&#x4E2A;&#x65B0;&#x7684;&#x65B9;&#x6CD5;:
+    xxxFirst()
+    xxxLast()
+</code></pre>
+<pre class="language-"><code class="lang-java"><span class="token class-name">LinkedList</span> list <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LinkedList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;b&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;c&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;d&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        list<span class="token punctuation">.</span><span class="token function">addFirst</span><span class="token punctuation">(</span><span class="token string">&quot;kk&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x6DFB;&#x52A0;&#x5230;&#x6700;&#x524D;&#x9762;</span>
+        list<span class="token punctuation">.</span><span class="token function">addFirst</span><span class="token punctuation">(</span><span class="token string">&quot;yy&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x6DFB;&#x52A0;&#x5230;&#x6700;&#x524D;&#x9762;</span>
+
+        list<span class="token punctuation">.</span><span class="token function">addLast</span><span class="token punctuation">(</span><span class="token string">&quot;zz&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x6DFB;&#x52A0;&#x5230;&#x6700;&#x540E;&#x9762;</span>
+        list<span class="token punctuation">.</span><span class="token function">addLast</span><span class="token punctuation">(</span><span class="token string">&quot;xx&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// &#x6DFB;&#x52A0;&#x5230;&#x6700;&#x540E;&#x9762;</span>
+
+        <span class="token class-name">Object</span> first <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">getFirst</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x7B2C;&#x4E00;&#x4E2A;:&quot;</span> <span class="token operator">+</span> first<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Object</span> last <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">getLast</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x6700;&#x540E;&#x4E00;&#x4E2A;:&quot;</span> <span class="token operator">+</span> last<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Object</span> removeFirst <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">removeFirst</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Object</span> removeLast <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">removeLast</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x79FB;&#x9664;&#x7B2C;&#x4E00;&#x4E2A;:&quot;</span> <span class="token operator">+</span> removeFirst<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x79FB;&#x9664;&#x6700;&#x540E;&#x4E00;&#x4E2A;:&quot;</span> <span class="token operator">+</span> removeLast<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="44&#x6CDB;&#x578B;"><a name="44&#x6CDB;&#x578B;" class="anchor-navigation-ex-anchor" href="#44&#x6CDB;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>4.4.&#x6CDB;&#x578B;</h3>
+<pre class="language-"><code class="lang-xml">1.&#x6982;&#x5FF5;
+    jdk1.5&#x4E4B;&#x524D;&#xFF0C;Java &#x96C6;&#x5408;&#x4F1A;&#x4E22;&#x5931;&#x5BB9;&#x5668;&#x4E2D;&#x6240;&#x6709;&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x628A;&#x6240;&#x6709;&#x5BF9;&#x8C61;&#x90FD;&#x5F53;&#x6210; Object &#x7C7B;&#x578B;&#x5904;&#x7406;;
+    jdk1.5&#x4E4B;&#x540E;&#xFF0C;&#x5F15;&#x5165;&#x6CDB;&#x578B;&#xFF0C;&#x4F5C;&#x7528;&#x8BA9;&#x5BB9;&#x5668;(&#x96C6;&#x5408;)&#x8BB0;&#x4F4F;&#x5177;&#x4F53;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;
+    &#x6CDB;&#x578B;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x5F97;&#x4F7F;&#x7528;&#x5BF9;&#x5E94;&#x7684;&#x5305;&#x88C5;&#x7C7B;; int---Integer
+
+2.&#x8BED;&#x6CD5;
+    &#x4F7F;&#x7528;&quot;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>&#x6CDB;&#x578B;&#x7684;&#x7C7B;&#x578B;</span><span class="token punctuation">&gt;</span></span>&quot; &#x6765;&#x6307;&#x5B9A;&#x5177;&#x4F53;&#x7684;&#x6CDB;&#x578B;&#x7C7B;&#x578B;   List<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Integer</span><span class="token punctuation">&gt;</span></span> ====&gt;&#x8BE5;&#x96C6;&#x5408;&#x53EA;&#x80FD;Integer&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;
+
+3.&#x4F5C;&#x7528;
+    a.&#x8BA9;&#x5BB9;&#x5668;&#x8BB0;&#x4F4F;&#x5177;&#x4F53;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;;
+    b.&#x4ECE;&#x5BB9;&#x5668;&#x96C6;&#x5408;&#x4E2D;&#x83B7;&#x53D6;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x5F3A;&#x8F6C;(&#x907F;&#x514D;&#x51FA;&#x73B0;&#x8F6C;&#x6362;&#x5F02;&#x5E38;)
+    c.&#x975E;&#x6307;&#x5B9A;&#x7684;&#x8BE5;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5176;&#x4F59;&#x6570;&#x636E;&#x65E0;&#x6CD5;&#x6DFB;&#x52A0;&#x3002;
+</code></pre>
+<pre class="language-"><code class="lang-java"><span class="token comment">/**
+ * &#x6CDB;&#x578B;
+ * 
+ * @author THINK
+ *
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo01</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">&gt;</span></span> arrayList <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        arrayList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        arrayList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        arrayList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        arrayList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// arrayList.add(&quot;a&quot;); //&#x975E;&#x6CD5; &#x89C4;&#x5B9A;&#x662F;Integer &#x4F20;&#x5165;&#x7684;String</span>
+
+        <span class="token comment">// arrayList.size() ====&gt;&#x6570;&#x7EC4;.length &#x83B7;&#x53D6;&#x957F;&#x5EA6;</span>
+
+<span class="token comment">//        int[] arr = { 1, 2, 3, 4, 5, 6 };</span>
+<span class="token comment">//</span>
+<span class="token comment">//        System.out.println(&quot;&#x96C6;&#x5408;&#x7684;&#x957F;&#x5EA6;:&quot; + arrayList.size());</span>
+<span class="token comment">//        System.out.println(&quot;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x957F;&#x5EA6;:&quot; + (&quot;aaaa&quot;).length());</span>
+<span class="token comment">//        System.out.println(&quot;&#x6570;&#x7EC4;&#x7684;&#x957F;&#x5EA6;:&quot; + arr.length);</span>
+
+        <span class="token keyword">int</span> result <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token comment">// &#x7EDF;&#x8BA1;&#x96C6;&#x5408;&#x4E2D;&#x6240;&#x6709;&#x5143;&#x7D20;&#x503C;&#x5F97;&#x548C;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> arrayList<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">int</span> num <span class="token operator">=</span> arrayList<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            result <span class="token operator">+=</span> num<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5143;&#x7D20;&#x7684;&#x548C;:&quot;</span> <span class="token operator">+</span> result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="45-&#x904D;&#x5386;&#x96C6;&#x5408;&#x7684;&#x65B9;&#x5F0F;"><a name="45-&#x904D;&#x5386;&#x96C6;&#x5408;&#x7684;&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#45-&#x904D;&#x5386;&#x96C6;&#x5408;&#x7684;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>4.5 <strong>&#x904D;&#x5386;&#x96C6;&#x5408;&#x7684;&#x65B9;&#x5F0F;</strong></h3>
+<pre class="language-"><code class="lang-java"><span class="token comment">/**
+     * &#x666E;&#x901A;for --&#x901A;&#x8FC7;&#x4E0B;&#x6807;
+     * 
+     * @param personList
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">method01</span><span class="token punctuation">(</span><span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Person</span><span class="token punctuation">&gt;</span></span> personList<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> personList<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token class-name">Person</span> person <span class="token operator">=</span> personList<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>person<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * &#x589E;&#x5F3A;for&#x5FAA;&#x73AF;
+     * 
+     * @param personList
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">method02</span><span class="token punctuation">(</span><span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Person</span><span class="token punctuation">&gt;</span></span> personList<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name">Person</span> person <span class="token operator">:</span> personList<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>person<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * &#x8FED;&#x4EE3;&#x5668;
+     * 
+     * @param personList
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">method03</span><span class="token punctuation">(</span><span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Person</span><span class="token punctuation">&gt;</span></span> personList<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 1.&#x5F97;&#x5230;&#x8FED;&#x4EE3;&#x5668;</span>
+        <span class="token class-name">Iterator</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Person</span><span class="token punctuation">&gt;</span></span> iterator <span class="token operator">=</span> personList<span class="token punctuation">.</span><span class="token function">iterator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 2.&#x5224;&#x65AD;&#x8FED;&#x4EE3;&#x5668;&#x6709;&#x6CA1;&#x6709;&#x503C;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>iterator<span class="token punctuation">.</span><span class="token function">hasNext</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 3.&#x83B7;&#x53D6;</span>
+            <span class="token class-name">Person</span> person <span class="token operator">=</span> iterator<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>person<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token comment">// list&#x5B58;&#x653E;&#x7684;&#x662F;&#x5F15;&#x7528;&#x5730;&#x5740;</span>
+        <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Person</span><span class="token punctuation">&gt;</span></span> list <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">Person</span> zhangsan <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">&quot;zhangsan&quot;</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Person</span> lisi <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">&quot;lisi&quot;</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Person</span> wangwu <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">&quot;wangwu&quot;</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Person</span> chenliu <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">&quot;chenliu&quot;</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>zhangsan<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>lisi<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>wangwu<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>chenliu<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// System.out.println(list);</span>
+        zhangsan<span class="token punctuation">.</span><span class="token function">setAge</span><span class="token punctuation">(</span><span class="token number">88</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// &#x904D;&#x5386;List&#x96C6;&#x5408;&#x7684;&#x4E09;&#x79CD;&#x65B9;&#x5F0F;</span>
+        <span class="token comment">// 1.&#x666E;&#x901A;&#x5FAA;&#x73AF;</span>
+        <span class="token comment">// System.out.println(list);</span>
+        <span class="token function">method03</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 2.&#x589E;&#x5F3A;for&#x5FAA;&#x73AF;</span>
+
+        <span class="token comment">// 3.&#x8FED;&#x4EE3;&#x5668;</span>
+
+    <span class="token punctuation">}</span>
+</code></pre>
+<h2 id="&#x4E94;&#x3001;set&#x96C6;&#x5408;"><a name="&#x4E94;&#x3001;set&#x96C6;&#x5408;" class="anchor-navigation-ex-anchor" href="#&#x4E94;&#x3001;set&#x96C6;&#x5408;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E94;&#x3001;Set&#x96C6;&#x5408;</h2>
+<pre class="language-"><code class="lang-xml">1.&#x7279;&#x70B9;
+    &#x65E0;&#x5E8F;&#xFF0C;&#x4E0D;&#x53EF;&#x91CD;&#x590D;;
+2.&#x6982;&#x8FF0;
+    Set &#x96C6;&#x5408;&#x4E0D;&#x5141;&#x8BB8;&#x5305;&#x542B;&#x76F8;&#x540C;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x5982;&#x679C;&#x8BD5;&#x628A;&#x4E24;&#x4E2A;&#x76F8;&#x540C;&#x7684;&#x5143;&#x7D20;&#x52A0;&#x5165;&#x540C;&#x4E00;&#x4E2A; Set &#x96C6;&#x5408;&#x4E2D;&#xFF0C;&#x5219;&#x6DFB;&#x52A0;&#x64CD;&#x4F5C;&#x5931;&#x8D25;&#x3002;
+    Set &#x5224;&#x65AD;&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x76F8;&#x540C;&#x4E0D;&#x662F;&#x4F7F;&#x7528; == &#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x800C;&#x662F;&#x6839;&#x636E; equals &#x65B9;&#x6CD5;
+
+3.&#x5E38;&#x7528;&#x7684;&#x65B9;&#x6CD5;
+    Set&#x7236;&#x63A5;&#x53E3;&#x662F;Collection&#xFF0C;&#x6240;&#x6709;Collection&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;Set&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;
+</code></pre>
+<p><a href="img/1553591782297.png" data-lightbox="5973a4a6-b31d-4fbc-8da7-5c1661824c68" data-title="1553591782297"><img src="img/1553591782297.png" alt="1553591782297"></a></p>
+<h3 id="51-hashset"><a name="51-hashset" class="anchor-navigation-ex-anchor" href="#51-hashset"><i class="fa fa-link" aria-hidden="true"></i></a>5.1 HashSet</h3>
+<pre class="language-"><code class="lang-xml">1.HashSet &#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x7279;&#x70B9;&#xFF1A;
+    a.&#x4E0D;&#x80FD;&#x4FDD;&#x8BC1;&#x5143;&#x7D20;&#x7684;&#x6392;&#x5217;&#x987A;&#x5E8F;
+    b.HashSet &#x4E0D;&#x662F;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#xFF08;&#x5F02;&#x6B65;&#xFF09;
+    c.&#x96C6;&#x5408;&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x662F;null
+
+2.&#x6982;&#x8FF0;
+    a.HashSet &#x662F; Set &#x63A5;&#x53E3;&#x7684;&#x5178;&#x578B;&#x5B9E;&#x73B0;&#xFF0C;&#x5927;&#x591A;&#x6570;&#x65F6;&#x5019;&#x4F7F;&#x7528; Set &#x96C6;&#x5408;&#x65F6;&#x90FD;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x5B9E;&#x73B0;&#x7C7B;&#x3002;
+    b.HashSet &#x6309; Hash &#x7B97;&#x6CD5;&#x6765;&#x5B58;&#x50A8;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x56E0;&#x6B64;&#x5177;&#x6709;&#x5F88;&#x597D;&#x7684;&#x5B58;&#x53D6;&#x548C;&#x67E5;&#x627E;&#x6027;&#x80FD;&#x3002;
+
+3.Set&#x5E38;&#x7528;&#x7684;&#x65B9;&#x6CD5;
+
+&#x9700;&#x8981;&#x8BA9;&#x5BF9;&#x8C61;&#x76F8;&#x540C;&#xFF0C;&#x91CD;&#x5199;hashCode&#x548C;equals&#x65B9;&#x6CD5;
+4.hashCode()&#x548C;equals()
+    a.hashCode() &#x7684;&#x4F5C;&#x7528;&#x662F;&#x83B7;&#x53D6;&#x54C8;&#x5E0C;&#x7801;,&#x5B83;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;int&#x6574;&#x6570;,&#x4F5C;&#x7528;&#x662F;&#x786E;&#x5B9A;&#x8BE5;&#x5BF9;&#x8C61;&#x5728;&#x54C8;&#x5E0C;&#x8868;&#x4E2D;&#x7684;&#x7D22;&#x5F15;&#x4F4D;&#x7F6E;
+    b.hashCode()&#x5C5E;&#x4E8E;Object&#x4E2D;&#x7684;&#x65B9;&#x6CD5;,&#x6240;&#x4EE5;&#x6240;&#x6709;&#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x62E5;&#x6709;&#x8BE5;&#x65B9;&#x6CD5;;
+    c.HashSet&#x96C6;&#x5408;&#x5728;&#x6BCF;&#x6B21;add&#x6DFB;&#x52A0;&#x5143;&#x7D20;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x90FD;&#x4F1A;&#x81EA;&#x5B9A;&#x8C03;&#x7528;&#x8BE5;&#x5143;&#x7D20;&#x7684;hashCode();
+    d.&#x53EA;&#x6709;&#x5F53;hashCode&#x548C;equals&#x90FD;&#x76F8;&#x540C;&#x7684;&#x90FD;&#x662F;&#xFF0C;HashSet&#x4F1A;&#x628A;&#x4ED6;&#x4EEC;&#x770B;&#x6210;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;;(&#x53EA;&#x4FDD;&#x7559;&#x4E00;&#x4E2A;)
+    e.&#x5F53;&#x5404;&#x4E2A;&#x5143;&#x7D20;&#x7684;hashCode()&#x8FD4;&#x56DE;&#x7684;&#x503C;&#x76F8;&#x540C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x624D;&#x4F1A;&#x53BB;&#x5224;&#x65AD;equals&#x662F;&#x5426;&#x76F8;&#x540C;;
+</code></pre>
+<p><a href="img/1553592256779.png" data-lightbox="b4c7537e-682a-4e47-9de9-d2269ff64d22" data-title="1553592256779"><img src="img/1553592256779.png" alt="1553592256779"></a></p>
+<pre class="language-"><code class="lang-java">    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">hashCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token comment">//        System.out.println(&quot;hashcode.....&quot;);</span>
+<span class="token comment">//        final int prime = 3333; </span>
+<span class="token comment">//        int result = 1;</span>
+<span class="token comment">//        result = prime * result + age;</span>
+<span class="token comment">//        result = prime * result + ((name == null) ? 0 : name.hashCode());</span>
+
+        <span class="token comment">// &#x76EE;&#x7684;:&#x5C3D;&#x53EF;&#x80FD;&#x7684;&#x907F;&#x514D;&#x4E0D;&#x540C;&#x7684;&#x5BF9;&#x8C61;&#x7684;hash&#x51B2;&#x7A81;</span>
+
+        <span class="token comment">// name:zhangsan age:20 111+112 = 223</span>
+        <span class="token comment">// name:lisi age:21 110+113 = 223</span>
+        <span class="token keyword">int</span> result <span class="token operator">=</span> age <span class="token operator">*</span> <span class="token number">123</span> <span class="token operator">+</span> name<span class="token punctuation">.</span><span class="token function">hashCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">equals</span><span class="token punctuation">(</span><span class="token class-name">Object</span> obj<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;equlas....&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//        if (this == obj)</span>
+<span class="token comment">//            return true;</span>
+<span class="token comment">//        if (obj == null)</span>
+<span class="token comment">//            return false;</span>
+<span class="token comment">//        if (getClass() != obj.getClass())</span>
+<span class="token comment">//            return false;</span>
+<span class="token comment">//        Student other = (Student) obj;</span>
+<span class="token comment">//        if (age != other.age)</span>
+<span class="token comment">//            return false;</span>
+<span class="token comment">//        if (name == null) {</span>
+<span class="token comment">//            if (other.name != null)</span>
+<span class="token comment">//                return false;</span>
+<span class="token comment">//        } else if (!name.equals(other.name))</span>
+<span class="token comment">//            return false;</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>obj <span class="token keyword">instanceof</span> <span class="token class-name">Student</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token class-name">Student</span> stu <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">Student</span><span class="token punctuation">)</span> obj<span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>stu<span class="token punctuation">.</span>name<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">==</span> stu<span class="token punctuation">.</span>age<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<p><strong>Set&#x96C6;&#x5408;&#x904D;&#x5386;&#x65B9;&#x5F0F;</strong></p>
+<pre class="language-"><code class="lang-java">    <span class="token comment">//&#x589E;&#x5F3A;for</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">pirntln1</span><span class="token punctuation">(</span><span class="token class-name">Set</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Student</span><span class="token punctuation">&gt;</span></span> studentSet<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name">Student</span> student <span class="token operator">:</span> studentSet<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>student<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&quot;:---&gt;&quot;</span> <span class="token operator">+</span> student<span class="token punctuation">.</span><span class="token function">getAge</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">//&#x8FED;&#x4EE3;&#x5668;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">pirntln2</span><span class="token punctuation">(</span><span class="token class-name">Set</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Student</span><span class="token punctuation">&gt;</span></span> studentSet<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Iterator</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Student</span><span class="token punctuation">&gt;</span></span> it <span class="token operator">=</span> studentSet<span class="token punctuation">.</span><span class="token function">iterator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>it<span class="token punctuation">.</span><span class="token function">hasNext</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token class-name">Student</span> student <span class="token operator">=</span> it<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>student<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&quot;:&lt;-----&gt;&quot;</span> <span class="token operator">+</span> student<span class="token punctuation">.</span><span class="token function">getAge</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<h3 id="52-linkedhashset"><a name="52-linkedhashset" class="anchor-navigation-ex-anchor" href="#52-linkedhashset"><i class="fa fa-link" aria-hidden="true"></i></a>5.2 LinkedHashSet</h3>
+<pre class="language-"><code class="lang-xml">1.&#x7279;&#x70B9;
+    &#x5177;&#x6709;&#x63D2;&#x5165;&#x987A;&#x5E8F;,&#x4E0D;&#x53EF;&#x91CD;&#x590D;;
+
+2.&#x6982;&#x8FF0;
+    a.LinkedHashSet&#x662F;HashSet&#x7684;&#x5B50;&#x7C7B;;
+    b.Set &#x63A5;&#x53E3;&#x7684;&#x54C8;&#x5E0C;&#x8868;&#x548C;&#x94FE;&#x8868;&#x5B9E;&#x73B0;
+    c.LinkedHashSet &#x6027;&#x80FD;&#x63D2;&#x5165;&#x6027;&#x80FD;&#x7565;&#x4F4E;&#x4E8E; HashSet
+</code></pre>
+<pre class="language-"><code class="lang-java">    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token class-name">Set</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span> hashSet <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LinkedHashSet</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        hashSet<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        hashSet<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;b&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        hashSet<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;c&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        hashSet<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;d&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        hashSet<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;e&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        hashSet<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        hashSet<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        hashSet<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>hashSet<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span>
+<span class="token comment">//&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;&#x6709;&#x5E8F;,&#x4E0D;&#x53EF;&#x91CD;&#x590D;</span>
+<span class="token comment">//[a, b, c, d, e, null, 1]</span>
+</code></pre>
+<h3 id="53-treeset"><a name="53-treeset" class="anchor-navigation-ex-anchor" href="#53-treeset"><i class="fa fa-link" aria-hidden="true"></i></a>5.3 TreeSet</h3>
+<pre class="language-"><code class="lang-xml">1.&#x6982;&#x8FF0;
+    a.&#x4F7F;&#x7528;&#x5143;&#x7D20;&#x7684;&#x81EA;&#x7136;&#x987A;&#x5E8F;&#x5BF9;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6392;&#x5E8F;;
+    b.&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#x6392;&#x5E8F;
+    c.&#x6B64;&#x5B9E;&#x73B0;&#x4E0D;&#x662F;&#x540C;&#x6B65;&#x7684;&#xFF0C;&#x7EBF;&#x7A0B;&#x4E0D;&#x5B89;&#x5168;;
+    d.TreeSet&#x4E0D;&#x80FD;&#x5B58;&#x653E; null
+    c.&#x4E0D;&#x540C;&#x5B58;&#x653E;&#x591A;&#x4E2A;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x5173;&#x7CFB;&#x7684;&#x7C7B;&#x578B;  Integer&#x548C;String
+</code></pre>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token comment">// &#x9ED8;&#x8BA4;&#x662F;&#x81EA;&#x7136;&#x6392;&#x5E8F;</span>
+        <span class="token class-name">Set</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span> hashSet <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TreeSet</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        hashSet<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;c&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        hashSet<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;d&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        hashSet<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        hashSet<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;b&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        hashSet<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;e&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        hashSet<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// hashSet.add(null);</span>
+        <span class="token comment">// hashSet.add(1);</span>
+
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>hashSet<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span>
+</code></pre>
+<h4 id="1treeset&#x6DFB;&#x52A0;&#x5BF9;&#x8C61;"><a name="1treeset&#x6DFB;&#x52A0;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#1treeset&#x6DFB;&#x52A0;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>1.TreeSet&#x6DFB;&#x52A0;&#x5BF9;&#x8C61;</h4>
+<pre class="language-"><code class="lang-xml">1.&#x6982;&#x8FF0;
+    TreeSet&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x5F3A;&#x5236;&#x9700;&#x8981;&#x6709;&#x53EF;&#x6BD4;&#x6027;;
+    java&#x63D0;&#x4F9B;&#x4E86;Comparable&#x63A5;&#x53E3;&#x5F3A;&#x5236;&#x8FDB;&#x884C;&#x6392;&#x5E8F;;
+
+2.Comparable&#x7528;&#x6CD5;
+    a.&#x81EA;&#x5DF1;&#x7684;&#x7C7B;&#x5B9E;&#x73B0;Comparable&#x63A5;&#x53E3;;
+    b.&#x91CD;&#x5199;&#x91CC;&#x9762; compareTo()&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#x3002;
+        &#x8FD4;&#x56DE;&#x503C;:&#x8D1F;&#x6574;&#x6570;&#x3001;&#x96F6;&#x6216;&#x6B63;&#x6574;&#x6570;&#xFF0C;&#x6839;&#x636E;&#x6B64;&#x5BF9;&#x8C61;&#x662F;&#x5C0F;&#x4E8E;&#x3001;&#x7B49;&#x4E8E;&#x8FD8;&#x662F;&#x5927;&#x4E8E;&#x6307;&#x5B9A;&#x5BF9;&#x8C61;&#x3002; 
+
+3.comparator&#x7528;&#x6CD5;(&#x81EA;&#x5B9A;&#x4E49;&#x6BD4;&#x8F83;&#x5668;)
+    a.&#x521B;&#x5EFA;comparator&#x6BD4;&#x8F83;&#x5668;
+    b.&#x521B;&#x5EFA;TreeSet&#x5BF9;&#x8C61;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x4F20;&#x5165;&#x6BD4;&#x8F83;&#x5668;
+        Set<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Anmal</span><span class="token punctuation">&gt;</span></span> set =  new TreeSet&lt;&gt;(comparator)
+</code></pre>
+<pre class="language-"><code class="lang-java"><span class="token comment">// 1.&#x6309;&#x7167;age &#x8FDB;&#x884C;&#x6392;&#x5E8F;</span>
+<span class="token comment">// 2.&#x5982;&#x679C;age&#x76F8;&#x7B49;&#xFF0C;&#x6BD4;&#x8F83;name</span>
+
+<span class="token comment">//&#x5B9E;&#x73B0;Comparable&#x63A5;&#x53E3;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token keyword">implements</span> <span class="token class-name">Comparable</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Person</span><span class="token punctuation">&gt;</span></span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">private</span> <span class="token class-name">String</span> name<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">int</span> age<span class="token punctuation">;</span>
+
+    <span class="token comment">//get/set</span>
+    <span class="token comment">//&#x6784;&#x9020;&#x65B9;&#x6CD5;</span>
+    <span class="token comment">//toString</span>
+
+    <span class="token comment">/**
+     * &#x4F7F;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x6392;&#x5E8F;
+     */</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">compareTo</span><span class="token punctuation">(</span><span class="token class-name">Person</span> o<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// &#x5B89;&#x88C5;&#x5E74;&#x9F84;&#x8FDB;&#x884C;&#x6392;&#x5E8F;</span>
+        <span class="token keyword">int</span> result <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">-</span> o<span class="token punctuation">.</span>age<span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x6BD4;&#x8F83;&#x7ED3;&#x679C;-------&gt;:&quot;</span> <span class="token operator">+</span> result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// &#x5982;&#x679C;&#x5E74;&#x9F84;&#x76F8;&#x540C;&#xFF1B;&#x770B;&#x6210;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>result <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            result <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token function">compareTo</span><span class="token punctuation">(</span>o<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// String&#x7684;&#x81EA;&#x7136;&#x6392;&#x5E8F; &#x53BB;&#x6BD4;&#x8F83;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token comment">// 1.&#x6309;&#x7167;age &#x8FDB;&#x884C;&#x6392;&#x5E8F;</span>
+        <span class="token comment">// 2.&#x5982;&#x679C;age&#x76F8;&#x7B49;&#xFF0C;&#x6BD4;&#x8F83;name</span>
+        <span class="token class-name">Person</span> zhangsan <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">&quot;b&quot;</span><span class="token punctuation">,</span> <span class="token number">21</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Person</span> lisi <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span> <span class="token number">21</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Person</span> zhangsan2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">&quot;zhangsan&quot;</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Person</span> wangwu <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">&quot;wangwu&quot;</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Person</span> zhaoliu <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">&quot;zhaoliu&quot;</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">Set</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Person</span><span class="token punctuation">&gt;</span></span> set <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TreeSet</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>zhaoliu<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>zhangsan<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>lisi<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>zhangsan2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>wangwu<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>set<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token comment">//&#x7ED3;&#x679C;</span>
+<span class="token punctuation">[</span><span class="token class-name">Person</span> <span class="token punctuation">[</span>name<span class="token operator">=</span>wangwu<span class="token punctuation">,</span> age<span class="token operator">=</span><span class="token number">19</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token class-name">Person</span> <span class="token punctuation">[</span>name<span class="token operator">=</span>a<span class="token punctuation">,</span> age<span class="token operator">=</span><span class="token number">21</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token class-name">Person</span> <span class="token punctuation">[</span>name<span class="token operator">=</span>b<span class="token punctuation">,</span> age<span class="token operator">=</span><span class="token number">21</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token class-name">Person</span> <span class="token punctuation">[</span>name<span class="token operator">=</span>zhangsan<span class="token punctuation">,</span> age<span class="token operator">=</span><span class="token number">22</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token class-name">Person</span> <span class="token punctuation">[</span>name<span class="token operator">=</span>zhaoliu<span class="token punctuation">,</span> age<span class="token operator">=</span><span class="token number">25</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+</code></pre>
+<h4 id="2&#x81EA;&#x5B9A;&#x4E49;&#x6BD4;&#x8F83;&#x5668;"><a name="2&#x81EA;&#x5B9A;&#x4E49;&#x6BD4;&#x8F83;&#x5668;" class="anchor-navigation-ex-anchor" href="#2&#x81EA;&#x5B9A;&#x4E49;&#x6BD4;&#x8F83;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>2.&#x81EA;&#x5B9A;&#x4E49;&#x6BD4;&#x8F83;&#x5668;</h4>
+<pre class="language-"><code class="lang-java">
+<span class="token comment">/**
+ * &#x521B;&#x5EFA;&#x6BD4;&#x8F83;&#x5668;
+ * @author THINK
+ *
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MyComparator</span> <span class="token keyword">implements</span> <span class="token class-name">Comparator</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Animal</span><span class="token punctuation">&gt;</span></span> <span class="token punctuation">{</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">compare</span><span class="token punctuation">(</span><span class="token class-name">Animal</span> o1<span class="token punctuation">,</span> <span class="token class-name">Animal</span> o2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token comment">// &#x6BD4;&#x8F83;&#x5E74;&#x9F84;</span>
+        <span class="token keyword">int</span> result <span class="token operator">=</span> o1<span class="token punctuation">.</span><span class="token function">getAge</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> o2<span class="token punctuation">.</span><span class="token function">getAge</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>result <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            result <span class="token operator">=</span> o1<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">compareTo</span><span class="token punctuation">(</span>o2<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+<span class="token comment">//&#x4F7F;&#x7528;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo06</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token comment">// Collections.sort(list, c);</span>
+        <span class="token comment">// &#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x6BD4;&#x8F83;&#x5668;</span>
+        <span class="token class-name">MyComparator</span> comparator <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MyComparator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Set</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Animal</span><span class="token punctuation">&gt;</span></span> treeSet <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TreeSet</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span>comparator<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//&#x6784;&#x9020;&#x5BF9;&#x8C61;&#xFF0C;&#x6307;&#x5B9A;&#x6BD4;&#x8F83;&#x5668;</span>
+
+        <span class="token class-name">Animal</span> tiger <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Animal</span><span class="token punctuation">(</span><span class="token string">&quot;m&quot;</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Animal</span> dog <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Animal</span><span class="token punctuation">(</span><span class="token string">&quot;dog&quot;</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Animal</span> cat <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Animal</span><span class="token punctuation">(</span><span class="token string">&quot;cat&quot;</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Animal</span> pig <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Animal</span><span class="token punctuation">(</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        treeSet<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>dog<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        treeSet<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>cat<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        treeSet<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>pig<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        treeSet<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>tiger<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>treeSet<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// List&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;---------------------------------------------------------------&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Animal</span><span class="token punctuation">&gt;</span></span> arrayList <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        arrayList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>dog<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        arrayList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>cat<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        arrayList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>pig<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        arrayList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>tiger<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>arrayList<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// &#x6307;&#x5B9A;&#x6BD4;&#x8F83;&#x5668;</span>
+        <span class="token class-name">Collections</span><span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span>arrayList<span class="token punctuation">,</span> comparator<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x6392;&#x5E8F;&#x4E4B;&#x540E;:&quot;</span> <span class="token operator">+</span> arrayList<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="&#x516D;&#x3001;map&#x96C6;&#x5408;"><a name="&#x516D;&#x3001;map&#x96C6;&#x5408;" class="anchor-navigation-ex-anchor" href="#&#x516D;&#x3001;map&#x96C6;&#x5408;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x516D;&#x3001;Map&#x96C6;&#x5408;</h2>
+<pre class="language-"><code class="lang-xml">1.&#x6982;&#x8FF0;
+    a.Map &#x7528;&#x4E8E;&#x4FDD;&#x5B58;&#x5177;&#x6709;&#x6620;&#x5C04;&#x5173;&#x7CFB;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x56E0;&#x6B64; Map &#x96C6;&#x5408;&#x91CC;&#x4FDD;&#x5B58;&#x7740;&#x4E24;&#x7EC4;&#x503C;; key--value
+    b.Map &#x4E2D;&#x7684; key &#x548C;  value &#x90FD;&#x53EF;&#x4EE5;&#x662F;&#x4EFB;&#x4F55;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;
+    c.Map &#x4E2D;&#x7684; Key &#x4E0D;&#x5141;&#x8BB8;&#x91CD;&#x590D;
+    d.Key &#x548C; Value &#x4E4B;&#x95F4;&#x5B58;&#x5728;&#x5355;&#x5411;&#x4E00;&#x5BF9;&#x4E00;&#x5173;&#x7CFB;
+
+43123  zhangsan
+43234  zhangsan
+
+2.Map&#x63A5;&#x53E3;&#x4E2D;&#x5E38;&#x7528;&#x7684;&#x65B9;&#x6CD5;
+</code></pre>
+<p><a href="img/1553667646077.png" data-lightbox="c7d7f250-72f1-4fa0-bdc8-20e60ff81302" data-title="1553667646077"><img src="img/1553667646077.png" alt="1553667646077"></a></p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Map</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 1.&#x6DFB;&#x52A0;&#x6620;&#x5C04;&#x5173;&#x7CFB;</span>
+        map<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;zhagnsan&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;&#x5E7F;&#x4E1C;&#x6DF1;&#x5733;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        map<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;lisi&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;&#x6C5F;&#x897F;&#x5357;&#x660C;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        map<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;wangwu&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;&#x9ED1;&#x9F99;&#x6C5F;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        map<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;lisi&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;&#x6C5F;&#x897F;&#x65B0;&#x4F59;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// key&#x91CD;&#x590D; &#x4F1A;&#x5C06;&#x539F;&#x6765;&#x7684;key&#x7684;value&#x66FF;&#x6362;&#x6389;</span>
+
+        <span class="token comment">// 2.&#x6839;&#x636E;key&#x83B7;&#x53D6;value</span>
+        <span class="token class-name">String</span> string <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;wangwu&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;key&#x5BF9;&#x5E94;&#x7684;value===&gt;&quot;</span> <span class="token operator">+</span> string<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 3.&#x662F;&#x5426;&#x5305;&#x542B;key,value</span>
+        <span class="token keyword">boolean</span> containsKey <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">containsKey</span><span class="token punctuation">(</span><span class="token string">&quot;zhaoliu&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">boolean</span> containsValue <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">containsValue</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5E7F;&#x4E1C;&#x6DF1;&#x5733;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x662F;&#x5426;&#x5305;&#x542B;key:&quot;</span> <span class="token operator">+</span> containsKey<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x662F;&#x5426;&#x5305;&#x542B;value:&quot;</span> <span class="token operator">+</span> containsValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 4.&#x96C6;&#x5408;&#x7684;&#x5927;&#x5C0F;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;Map&#x96C6;&#x5408;&#x7684;&#x5927;&#x5C0F;:&quot;</span> <span class="token operator">+</span> map<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// map.clear(); // &#x6E05;&#x7A7A;</span>
+
+        <span class="token comment">// 5.&#x5224;&#x65AD;&#x96C6;&#x5408;&#x662F;&#x5426;&#x4E3A;&#x7A7A;</span>
+        <span class="token keyword">boolean</span> empty <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x662F;&#x5426;&#x4E3A;&#x7A7A;:&quot;</span> <span class="token operator">+</span> empty<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 6.&#x6839;&#x636E;key&#x79FB;&#x9664;&#x952E;&#x503C;&#x5BF9;</span>
+        <span class="token comment">// String remove = map.remove(&quot;lisi&quot;);</span>
+        <span class="token comment">// System.out.println(&quot;&#x79FB;&#x9664;:&quot; + remove);</span>
+
+        <span class="token comment">// 7.&#x83B7;&#x53D6;key&#x7684;&#x96C6;&#x5408;</span>
+        <span class="token class-name">Set</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> keySet <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">keySet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x6240;&#x6709;&#x7684;key:&quot;</span> <span class="token operator">+</span> keySet<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 8.&#x83B7;&#x53D6;&#x6240;&#x6709;&#x7684;value</span>
+        <span class="token class-name">Collection</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> values <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">values</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x6240;&#x6709;&#x7684;value:&quot;</span> <span class="token operator">+</span> values<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 9.&#x83B7;&#x53D6;&#x6240;&#x6709;&#x7684;&#x5B9E;&#x4F53;</span>
+        <span class="token class-name">Set</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Entry</span><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span></span> entrySet <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">entrySet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5B9E;&#x4F53;&#x7C7B;:&quot;</span> <span class="token operator">+</span> entrySet<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>map<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x904D;&#x5386;Map&#x7684;&#x65B9;&#x5F0F;:</strong></p>
+<p><strong>&#x7B2C;&#x4E00;&#x79CD;:&#x5148;&#x83B7;&#x53D6;key,&#x901A;&#x8FC7;key&#x83B7;&#x53D6;value</strong></p>
+<p><strong>&#x7B2C;&#x4E8C;&#x79CD;:&#x83B7;&#x53D6;&#x6574;&#x4E2A;Entry&#x5B9E;&#x4F53;,&#x83B7;&#x53D6;key,value</strong>&#xFF08;&#x63A8;&#x8350;&#xFF09;</p>
+<pre class="language-"><code class="lang-java"><span class="token comment">/**
+     * &#x5148;&#x83B7;&#x53D6;key&#xFF0C;&#x901A;&#x8FC7;key&#x83B7;&#x53D6;value
+     * 
+     * @param map
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">method01</span><span class="token punctuation">(</span><span class="token class-name">Map</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> map<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token comment">// 1.&#x83B7;&#x53D6;key&#x7684;&#x96C6;&#x5408;</span>
+        <span class="token class-name">Set</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> keySet <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">keySet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 2.&#x904D;&#x5386;&#x53D6;&#x51FA;&#x6BCF;&#x4E00;&#x4E2A;key(&#x589E;&#x5F3A;for,&#x8FED;&#x4EE3;&#x5668;)</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name">String</span> key <span class="token operator">:</span> keySet<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token class-name">String</span> value <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;key---&gt;:&quot;</span> <span class="token operator">+</span> key <span class="token operator">+</span> <span class="token string">&quot; ------&gt;value:&quot;</span> <span class="token operator">+</span> value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// &#x6761;&#x4EF6;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// 3.&#x901A;&#x8FC7; Map&#x4E2D;&#x7684;get&#x65B9;&#x6CD5;&#xFF0C;&#x83B7;&#x53D6;value</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * &#x83B7;&#x53D6; Entry Set &#x63A8;&#x8350;
+     * 
+     * @param map
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">method02</span><span class="token punctuation">(</span><span class="token class-name">Map</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> map<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token comment">// 1.&#x83B7;&#x53D6;EntrySet&#x96C6;&#x5408;</span>
+        <span class="token class-name">Set</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Entry</span><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span></span> entrySet <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">entrySet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 2.&#x904D;&#x5386;&#x96C6;&#x5408; &#x62FF;&#x51FA;Entry(&#x8FED;&#x4EE3;&#x5668;&#x548C;&#x589E;&#x5F3A;for)</span>
+        <span class="token comment">// 2.1 &#x521B;&#x5EFA;&#x8FED;&#x4EE3;&#x5668;</span>
+        <span class="token comment">// 2.2 &#x5224;&#x65AD;&#x662F;&#x5426;&#x8FD8;&#x6709;&#x5143;&#x7D20;</span>
+        <span class="token comment">// 2.3 &#x53D6;&#x51FA;&#x5143;&#x7D20;</span>
+        <span class="token class-name">Iterator</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Entry</span><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span></span> it <span class="token operator">=</span> entrySet<span class="token punctuation">.</span><span class="token function">iterator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>it<span class="token punctuation">.</span><span class="token function">hasNext</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 3.&#x901A;&#x8FC7;Entry&#x7684;getKey() &#x548C;getValue()&#x83B7;&#x53D6;&#x503C;</span>
+            <span class="token class-name">Entry</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> entry <span class="token operator">=</span> it<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token class-name">String</span> key <span class="token operator">=</span> entry<span class="token punctuation">.</span><span class="token function">getKey</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name">String</span> value <span class="token operator">=</span> entry<span class="token punctuation">.</span><span class="token function">getValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;key---&gt;:&quot;</span> <span class="token operator">+</span> key <span class="token operator">+</span> <span class="token string">&quot; ------&gt;value:&quot;</span> <span class="token operator">+</span> value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<h3 id="61-hashmap"><a name="61-hashmap" class="anchor-navigation-ex-anchor" href="#61-hashmap"><i class="fa fa-link" aria-hidden="true"></i></a>6.1 HashMap</h3>
+<pre class="language-"><code class="lang-xml">1.&#x7279;&#x70B9; 
+    a.&#x57FA;&#x4E8E;&#x54C8;&#x5E0C;&#x8868;&#x7684; Map &#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;
+    b.&#x5141;&#x8BB8;&#x4F7F;&#x7528; null &#x503C;&#x548C; null &#x952E;,key&#x4E0D;&#x80FD;&#x91CD;&#x590D;&#xFF0C;&#x53EA;&#x6709;&#x6709;&#x4E00;&#x4E2A;null
+    c.&#x6B64;&#x5B9E;&#x73B0;&#x4E0D;&#x662F;&#x540C;&#x6B65;&#x7684;&#xFF0C;&#x7EBF;&#x7A0B;&#x4E0D;&#x5B89;&#x5168;&#xFF0C;&#x6548;&#x7387;&#x9AD8;
+</code></pre>
+<h3 id="62-hashtable"><a name="62-hashtable" class="anchor-navigation-ex-anchor" href="#62-hashtable"><i class="fa fa-link" aria-hidden="true"></i></a>6.2 HashTable</h3>
+<pre class="language-"><code class="lang-xml">1.&#x7279;&#x70B9;
+    a.&#x6B64;&#x7C7B;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;&#x8868;&#xFF0C;&#x8BE5;&#x54C8;&#x5E0C;&#x8868;&#x5C06;&#x952E;&#x6620;&#x5C04;&#x5230;&#x76F8;&#x5E94;&#x7684;&#x503C;
+    b.&#x4E0D;&#x80FD;&#x4F7F;&#x7528;null&#x4F5C;&#x4E3A;key&#x6216;&#x8005;value
+    c.Hashtable &#x662F;&#x540C;&#x6B65;&#x7684;,&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x3002;&#x6548;&#x7387;&#x6162;    
+    d.Hashtable &#x662F;HashMap&#x7684;&#x5386;&#x53F2;&#x7248;&#x672C;&#xFF08;&#x4E0D;&#x4F1A;&#x7528;&#xFF09;
+</code></pre>
+<h3 id="63-linkedhashmap"><a name="63-linkedhashmap" class="anchor-navigation-ex-anchor" href="#63-linkedhashmap"><i class="fa fa-link" aria-hidden="true"></i></a>6.3 LinkedHashMap</h3>
+<pre class="language-"><code class="lang-xml">1.&#x7279;&#x70B9;
+    a.LinkedHashMap &#x662F; HashMap &#x7684;&#x5B50;&#x7C7B;
+    b.LinkedHashMap &#x53EF;&#x4EE5;&#x7EF4;&#x62A4; Map &#x7684;&#x8FED;&#x4EE3;&#x987A;&#x5E8F;&#xFF1A;&#x8FED;&#x4EE3;&#x987A;&#x5E8F;&#x4E0E; Key-Value &#x5BF9;&#x7684;&#x63D2;&#x5165;&#x987A;&#x5E8F;&#x4E00;&#x81F4;
+</code></pre>
+<h3 id="64-treemap"><a name="64-treemap" class="anchor-navigation-ex-anchor" href="#64-treemap"><i class="fa fa-link" aria-hidden="true"></i></a>6.4 TreeMap</h3>
+<pre class="language-"><code class="lang-xml">1.&#x7279;&#x70B9;
+    a.&#x8BE5;&#x6620;&#x5C04;&#x6839;&#x636E;&#x5176;&#x952E;&#x7684;&#x81EA;&#x7136;&#x987A;&#x5E8F;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF08;&#x9ED8;&#x8BA4;&#xFF09;
+    b.&#x6216;&#x8005;&#x6839;&#x636E;&#x521B;&#x5EFA;&#x6620;&#x5C04;&#x65F6;&#x63D0;&#x4F9B;&#x7684; Comparator &#x8FDB;&#x884C;&#x6392;&#x5E8F;(&#x81EA;&#x5B9A;&#x4E49;&#x6392;&#x5E8F;-&#x81EA;&#x5B9A;&#x4E49;&#x6BD4;&#x8F83;&#x5668;)
+    c.&#x6CE8;&#x610F;&#xFF0C;&#x6B64;&#x5B9E;&#x73B0;&#x4E0D;&#x662F;&#x540C;&#x6B65;&#x7684;
+</code></pre>
+<pre class="language-"><code class="lang-java">    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// &#x521B;&#x5EFA;map //&#x5982;&#x679C;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x7684;&#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;key,&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x5B9E;&#x73B0;&#x6BD4;&#x8F83;&#x5668;( &#x53C2;&#x8003;TreeSet)</span>
+        <span class="token class-name">Map</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span> treeMap <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TreeMap</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        treeMap<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;c&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;133&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        treeMap<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;d&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;129&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        treeMap<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;199&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        treeMap<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;b&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;1125&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token function">println</span><span class="token punctuation">(</span>treeMap<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">println</span><span class="token punctuation">(</span><span class="token class-name">Map</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span> treeMap<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Set</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Entry</span><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">Object</span><span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span></span> entrySet <span class="token operator">=</span> treeMap<span class="token punctuation">.</span><span class="token function">entrySet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name">Entry</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span> entry <span class="token operator">:</span> entrySet<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>entry<span class="token punctuation">.</span><span class="token function">getKey</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&quot;-----&gt;&quot;</span> <span class="token operator">+</span> entry<span class="token punctuation">.</span><span class="token function">getValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<h3 id="65-properties"><a name="65-properties" class="anchor-navigation-ex-anchor" href="#65-properties"><i class="fa fa-link" aria-hidden="true"></i></a>6.5 Properties</h3>
+<pre class="language-"><code class="lang-xml">1.&#x7279;&#x70B9;
+    a.Properties &#x7C7B;&#x662F; Hashtable &#x7684;&#x5B50;&#x7C7B;&#xFF0C;&#x8BE5;&#x5BF9;&#x8C61;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x5C5E;&#x6027;&#x6587;&#x4EF6;
+    b.&#x7531;&#x4E8E;&#x5C5E;&#x6027;&#x6587;&#x4EF6;&#x91CC;&#x7684; key&#x3001;value &#x90FD;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;
+</code></pre>
+<pre class="language-"><code class="lang-java">    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token class-name">Properties</span> properties <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Properties</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        properties<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;xx&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;aa&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        properties<span class="token punctuation">.</span><span class="token function">setProperty</span><span class="token punctuation">(</span><span class="token string">&quot;bb&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;123&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// String object = (String) properties.get(&quot;xx&quot;);</span>
+        <span class="token class-name">String</span> property <span class="token operator">=</span> properties<span class="token punctuation">.</span><span class="token function">getProperty</span><span class="token punctuation">(</span><span class="token string">&quot;xx&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>property<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">String</span> property2 <span class="token operator">=</span> properties<span class="token punctuation">.</span><span class="token function">getProperty</span><span class="token punctuation">(</span><span class="token string">&quot;bb&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;&#x9ED8;&#x8BA4;&#x503C;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x5982;&#x679C;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x5BF9;&#x5E94;key&#x7684; value&#x663E;&#x793A;&#x9ED8;&#x8BA4;&#x503C;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>property2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span>
+</code></pre>
+<h2 id="&#x4E03;&#x3001;collections"><a name="&#x4E03;&#x3001;collections" class="anchor-navigation-ex-anchor" href="#&#x4E03;&#x3001;collections"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E03;&#x3001;Collections</h2>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo01</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token comment">// Arrays.asList:&#x4E0D;&#x662F;&#x5177;&#x4F53;&#x7684;&#x96C6;&#x5408;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x56FA;&#x5B9A;&#x7684;&#x957F;&#x5EA6;&#x96C6;&#x5408;</span>
+        <span class="token comment">// List&lt;Object&gt; arrayList = Arrays.asList(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;);</span>
+        <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> arrayList <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        arrayList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">Collections</span><span class="token punctuation">.</span><span class="token function">addAll</span><span class="token punctuation">(</span>arrayList<span class="token punctuation">,</span> <span class="token string">&quot;1&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;2&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;3&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;4&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;hello&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>arrayList<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// &#x6392;&#x5E8F; &#x81EA;&#x7136;&#x987A;&#x5E8F;</span>
+        <span class="token class-name">Collections</span><span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span>arrayList<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>arrayList<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// Collections.shuffle(arrayList); //&#x5143;&#x7D20;&#x968F;&#x673A;&#x751F;&#x6210;</span>
+        <span class="token comment">// System.out.println(arrayList);</span>
+
+        <span class="token class-name">Collections</span><span class="token punctuation">.</span><span class="token function">swap</span><span class="token punctuation">(</span>arrayList<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> arrayList<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x7F6E;&#x6362;&#x4F4D;&#x7F6E;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>arrayList<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// &#x66F4;&#x591A;&#x8BE6;&#x60C5;&#x67E5;&#x770B;API</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><a href="img/1553673448919.png" data-lightbox="f1fb321e-6072-4219-856f-ed559d6c7b8c" data-title="1553673448919"><img src="img/1553673448919.png" alt="1553673448919"></a></p>
+<p><a href="img/1553673504664.png" data-lightbox="d0a4600b-a7d2-437d-8f84-5e499c7ca4ad" data-title="1553673504664"><img src="img/1553673504664.png" alt="1553673504664"></a> </p>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x6700;&#x540E;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&#xFF1A;
+2019-08-20 23:38:12
+</span></footer>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style></body></html> <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> <script>     window.klipse_settings = {         selector: ".language-klipse, .lang-eval-clojure",         selector_eval_js: ".lang-eval-js",         selector_eval_python_client: ".lang-eval-python",         selector_eval_php: ".lang-eval-php",         selector_eval_scheme: ".lang-eval-scheme",         selector_eval_ruby: ".lang-eval-ruby",         selector_reagent: ".lang-reagent",        selector_google_charts: ".lang-google-chart",        selector_es2017: ".lang-eval-es2017",        selector_jsx: ".lang-eval-jsx",        selector_transpile_jsx: ".lang-transpile-jsx",        selector_render_jsx: ".lang-render-jsx",        selector_react: ".lang-react",        selector_eval_markdown: ".lang-render-markdown",        selector_eval_lambdaway: ".lang-render-lambdaway",        selector_eval_cpp: ".lang-eval-cpp",        selector_eval_html: ".lang-render-html",        selector_sql: ".lang-eval-sql",        selector_brainfuck: "lang-eval-brainfuck",        selector_js: ".lang-transpile-cljs"    }; </script> <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
+						
+					</section>
+					
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+				</div>
+			</div>
+			
+		</div>
+
+		
+		
+		<a href="../day12/day12.html" class="navigation navigation-prev " aria-label="Previous page: 第十二章:java集合框架一">
+			<i class="fa fa-angle-left"></i>
+		</a>
+		
+		
+		<a href="../day14/day14.html" class="navigation navigation-next " aria-label="Next page: 第十四章:javaIO流一">
+			<i class="fa fa-angle-right"></i>
+		</a>
+		
+		
+		
+	</div>
+	<script>
+		var gitbook = gitbook || [];
+		gitbook.push(function() {
+			gitbook.page.hasChanged({"page":{"title":"第十三章:java集合框架二","level":"1.14","depth":1,"next":{"title":"第十四章:javaIO流一","level":"1.15","depth":1,"path":"content/day14/day14.md","ref":"content/day14/day14.md","articles":[]},"previous":{"title":"第十二章:java集合框架一","level":"1.13","depth":1,"path":"content/day12/day12.md","ref":"content/day12/day12.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","-highlight","-lunr","-sharing","-search","search-pro","back-to-top-button","chapter-fold","expandable-chapters","splitter","page-treeview","anchor-navigation-ex","github","edit-link","popup","lightbox","hide-element","theme-fexa","tbfed-pagefooter","donate","copy-code-button","emphasize","klipse","pageview-count","auto-scroll-table","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"该文件最后修改时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"prism":{"css":["syntax-highlighting/assets/css/prism/prism-xonokai.css"]},"emphasize":{},"github":{"url":"https://github.com/hzittest/book_javase"},"livereload":{},"splitter":{},"search-pro":{},"auto-scroll-table":{},"popup":{},"theme-fexa":{"search-placeholder":"输入关键字搜索","logo":"./logo.png","favicon":"./favicon.ico"},"donate":{"title":"","button":"打赏","wechat":"https://github.com/LiangJunrong/document-library/blob/master/public-repertory/img/seek-reward.png?raw=true","alipay":"https://github.com/hzittest/book_javase/blob/master/content/images/alipay.jpg?raw=true","wechatText":"微信打赏","alipayText":"支付宝打赏"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":true,"mode":"float","showGoTop":false,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"lightbox":{"jquery":true},"back-to-top-button":{},"pageview-count":{},"copy-code-button":{},"klipse":{"myConfigKey":"it's the default value"},"edit-link":{"label":"编辑此页面","base":"https://github.com/hzittest/book_javase/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"expandable-chapters":{}},"theme":"default","author":"wwwshibapi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{"nav":[{"url":"http://www.baidu.com","target":"_blank","name":"简易教程"},{"url":"http://www.baidu.com","target":"_blank","name":"API帮助文档"},{"url":"http://www.baidu.com","target":"_blank","name":"高级java"},{"url":"http://www.baidu.com","target":"_blank","name":"测试文档"}]}},"title":"我的一本书","language":"zh-hans","links":{"sidebar":{"个性链接1":"https://www.baidu.com","个性链接2":"https://www.baidu.com"}},"gitbook":"*","description":"我第一本书的描述，很好"},"file":{"path":"content/day13/day13.md","mtime":"2019-08-20T15:38:12.069Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-20T15:48:39.898Z"},"basePath":"../..","book":{"language":""}});
+		});
+	</script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-fexa/fexa.js"></script>
+        
+    
+
+    </body>
+</html>
+

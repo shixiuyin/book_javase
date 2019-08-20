@@ -1,0 +1,1010 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第十八章:反射 · 我的一本书</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="wwwshibapi">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-xonokai.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-lightbox/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-fexa/fexa.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../day19/day19.html" />
+    
+    
+    <link rel="prev" href="../day17/day17.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+	<div class="header-inner">
+		<!-- LOGO -->
+		<div class="logo"></div>
+		<span class="title"></span>
+
+		<!-- Search -->
+		
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+
+		<!-- Nav -->
+		<ul class="header-nav">
+			<li>
+				<a href="http://www.baidu.com" target="_blank">简易教程</a>
+			</li><li>
+				<a href="http://www.baidu.com" target="_blank">API帮助文档</a>
+			</li><li>
+				<a href="http://www.baidu.com" target="_blank">高级java</a>
+			</li><li>
+				<a href="http://www.baidu.com" target="_blank">测试文档</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="book-summary">
+		<div class="book-summary-title">文档目录</div>
+		
+		
+		<nav role="navigation">
+			
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://www.baidu.com" target="_blank" class="custom-link">个性链接1</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://www.baidu.com" target="_blank" class="custom-link">个性链接2</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../day01/day01.html">
+            
+                <a href="../day01/day01.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    第一章:java语言概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    简介
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    环境变量
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    内容
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../day02/day02.html">
+            
+                <a href="../day02/day02.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    第二章:数据类型|运算符|变量
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    数据类型
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    运算符
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    变量
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../day03/day03.html">
+            
+                <a href="../day03/day03.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    第三章:分支语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../day04/day04.html">
+            
+                <a href="../day04/day04.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    第四章:循环语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../day05/day05.html">
+            
+                <a href="../day05/day05.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    第五章:数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../day06/day06.html">
+            
+                <a href="../day06/day06.html">
+            
+                    
+                        <b>1.7.</b>
+                    
+                    第六章:类和对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../day07/day07.html">
+            
+                <a href="../day07/day07.html">
+            
+                    
+                        <b>1.8.</b>
+                    
+                    第七章:封装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../day08/day08.html">
+            
+                <a href="../day08/day08.html">
+            
+                    
+                        <b>1.9.</b>
+                    
+                    第八章:继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../day09/day09.html">
+            
+                <a href="../day09/day09.html">
+            
+                    
+                        <b>1.10.</b>
+                    
+                    第九章:多态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../day10/day10.html">
+            
+                <a href="../day10/day10.html">
+            
+                    
+                        <b>1.11.</b>
+                    
+                    第十章:常用的类和对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../day11/day11.html">
+            
+                <a href="../day11/day11.html">
+            
+                    
+                        <b>1.12.</b>
+                    
+                    第十一章:java异常类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../day12/day12.html">
+            
+                <a href="../day12/day12.html">
+            
+                    
+                        <b>1.13.</b>
+                    
+                    第十二章:java集合框架一
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../day13/day13.html">
+            
+                <a href="../day13/day13.html">
+            
+                    
+                        <b>1.14.</b>
+                    
+                    第十三章:java集合框架二
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../day14/day14.html">
+            
+                <a href="../day14/day14.html">
+            
+                    
+                        <b>1.15.</b>
+                    
+                    第十四章:javaIO流一
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../day15/day15.html">
+            
+                <a href="../day15/day15.html">
+            
+                    
+                        <b>1.16.</b>
+                    
+                    第十五章:javaIO流二
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../day16/day16.html">
+            
+                <a href="../day16/day16.html">
+            
+                    
+                        <b>1.17.</b>
+                    
+                    第十六章:多线程一
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../day17/day17.html">
+            
+                <a href="../day17/day17.html">
+            
+                    
+                        <b>1.18.</b>
+                    
+                    第十七章:多线程二
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.19" data-path="day18.html">
+            
+                <a href="day18.html">
+            
+                    
+                        <b>1.19.</b>
+                    
+                    第十八章:反射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../day19/day19.html">
+            
+                <a href="../day19/day19.html">
+            
+                    
+                        <b>1.20.</b>
+                    
+                    第十九章:枚举和注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../day20/day20.html">
+            
+                <a href="../day20/day20.html">
+            
+                    
+                        <b>1.21.</b>
+                    
+                    第二十章:网络编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+		</nav>
+		
+		
+	</div>
+
+	<!-- Content nav -->
+	<div class="book-anchor">
+		<div class="book-anchor-title">在这篇文章中:</div>
+		<div class="book-anchor-body">
+
+		</div>
+	</div>
+
+	<div class="book-body">
+		
+		<div class="body-inner">
+			
+			
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >第十八章:反射</a>
+    </h1>
+</div>
+
+
+
+
+			<div class="page-wrapper" tabindex="-1" role="main">
+				<div class="page-inner">
+					
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+					<section class="normal markdown-section">
+						
+						<html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#day18-&#x53CD;&#x5C04;&#x7B14;&#x8BB0;"><b></b>day18_ &#x53CD;&#x5C04;&#x7B14;&#x8BB0;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4E00;&#x3001;&#x56DE;&#x987E;"><b></b>&#x4E00;&#x3001;&#x56DE;&#x987E;</a></li><li><span class="title-icon "></span><a href="#&#x4E8C;&#x3001;&#x53CD;&#x5C04;reflection"><b></b>&#x4E8C;&#x3001;&#x53CD;&#x5C04;(Reflection)</a></li><ul><li><span class="title-icon "></span><a href="#21-&#x53CD;&#x5C04;api"><b></b>2.1 &#x53CD;&#x5C04;API</a></li><li><span class="title-icon "></span><a href="#22-class&#x7C7B;"><b></b>2.2 Class&#x7C7B;</a></li></ul></ul></ul></div><ul>
+<li><div><a href="#&#x4E00;&#x3001;&#x56DE;&#x987E;">&#x4E00;&#x3001;&#x56DE;&#x987E;</a><i></i></div></li>
+<li><div><a href="#&#x4E8C;&#x3001;&#x53CD;&#x5C04;reflection">&#x4E8C;&#x3001;&#x53CD;&#x5C04;(Reflection)</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#21-&#x53CD;&#x5C04;api">2.1 &#x53CD;&#x5C04;API</a><i></i></div></li>
+<li><div><a href="#22-class&#x7C7B;">2.2 Class&#x7C7B;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#1&#x53CD;&#x5C04;&#x6784;&#x9020;&#x65B9;&#x6CD5;">1.&#x53CD;&#x5C04;&#x6784;&#x9020;&#x65B9;&#x6CD5;</a><i></i></div></li>
+<li><div><a href="#2&#x53CD;&#x5C04;&#x5C5E;&#x6027;">2.&#x53CD;&#x5C04;&#x5C5E;&#x6027;</a><i></i></div></li>
+<li><div><a href="#3&#x53CD;&#x5C04;&#x65B9;&#x6CD5;">3.&#x53CD;&#x5C04;&#x65B9;&#x6CD5;</a><i></i></div></li>
+</ul></li>
+</ul></li>
+</ul>
+
+
+<h1 id="day18-&#x53CD;&#x5C04;&#x7B14;&#x8BB0;"><a name="day18-&#x53CD;&#x5C04;&#x7B14;&#x8BB0;" class="anchor-navigation-ex-anchor" href="#day18-&#x53CD;&#x5C04;&#x7B14;&#x8BB0;"><i class="fa fa-link" aria-hidden="true"></i></a>day18_ &#x53CD;&#x5C04;&#x7B14;&#x8BB0;</h1>
+<h2 id="&#x4E00;&#x3001;&#x56DE;&#x987E;"><a name="&#x4E00;&#x3001;&#x56DE;&#x987E;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;&#x56DE;&#x987E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x3001;&#x56DE;&#x987E;</h2>
+<pre class="language-"><code class="lang-xml">1.&#x7EBF;&#x7A0B;&#x7684;&#x540C;&#x6B65;
+    &#x540C;&#x6B65;:&#x540C;&#x4E00;&#x65F6;&#x523B;&#x53EA;&#x80FD;&#x53D1;&#x8D77;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;;
+    &#x5F02;&#x6B65;:&#x540C;&#x4E00;&#x65F6;&#x523B;&#x53EF;&#x4EE5;&#x53D1;&#x8D77;&#x591A;&#x4E2A;&#x8BF7;&#x6C42;;
+    &#x7EBF;&#x7A0B;&#x7684;&#x540C;&#x6B65;:&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x65F6;&#x523B;&#xFF0C;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#x3002;
+    &#x4F5C;&#x7528;:&#x4FDD;&#x62A4;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x540C;&#x65F6;&#x8BBF;&#x95EE;&#x540C;&#x4E00;&#x4E2A;&#x8D44;&#x6E90;&#xFF0C;&#x5BF9;&#x8D44;&#x6E90;&#x9020;&#x6210;&#x7834;&#x574F;&#xFF0C;&#x6570;&#x636E;&#x6DF7;&#x4E71;;
+    &#x5728;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x5B89;&#x5168;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5C3D;&#x53EF;&#x80FD;&#x7684;&#x5C11;&#x7684;&#x540C;&#x6B65;&#x4EE3;&#x7801;&#xFF1B;
+
+    &#x540C;&#x6B65;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;:
+        &#x9690;&#x5F0F;&#x9501;&#xFF1A;synchronized
+            &#x6BCF;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x9501;&#xFF0C;&#x81EA;&#x52A8;&#x7684;&#x53BB;&#x4E0A;&#x9501;&#x548C;&#x89E3;&#x9501;;
+            &#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x4F7F;&#x7528;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x9501;&#xFF0C;&#x624D;&#x4F1A;&#x6709;&#x4F5C;&#x7528;;
+        &#x663E;&#x793A;&#x9501;&#xFF1A;Lock
+            &#x624B;&#x52A8;&#x4E0A;&#x9501;&#x3002;&#x624B;&#x52A8;&#x89E3;&#x9501;(&#x63A8;&#x8350;&#x653E;&#x5728;finally&#x8BED;&#x53E5;&#x5757;&#x91CC;&#x9762;)
+
+2.&#x5BF9;&#x8C61;&#x9501;
+    a.&#x6BCF;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x6709;&#x4E14;&#x4EC5;&#x6709;&#x4E00;&#x4E2A;&#x9501;;
+    b.&#x5F53;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x83B7;&#x53D6;&#x8BE5;&#x5BF9;&#x8C61;&#x9501;&#x4E4B;&#x540E;&#xFF0C;&#x5176;&#x4F59;&#x7EBF;&#x7A0B;&#x5728;&#x6CA1;&#x6709;&#x83B7;&#x53D6;&#x5BF9;&#x8C61;&#x9501;&#x4E4B;&#x524D;&#xFF0C;&#x65E0;&#x6CD5;&#x8C03;&#x7528;&#x8BE5;&#x5BF9;&#x8C61;&#x7684;&#x540C;&#x6B65;&#x65B9;&#x6CD5;;
+
+
+3.&#x7EBF;&#x7A0B;&#x7684;&#x8C03;&#x5EA6;|&#x901A;&#x4FE1;
+    wait:&#x91CA;&#x653E;&#x8BE5;&#x5BF9;&#x8C61;&#x9501;&#xFF0C;&#x7B49;&#x5F85;&#x9501;&#x5B9A;&#x6C60;&#xFF0C;&#x4E0D;&#x53C2;&#x4E0E;&#x9501;&#x7684;&#x7ADE;&#x4E89;&#x3002;&#x76F4;&#x5230;&#x88AB;notify&#x5524;&#x9192;&#x6216;&#x8005;wait&#x65F6;&#x95F4;&#x7ED3;&#x675F;;
+    notify:&#x5524;&#x9192;&#x5F53;&#x524D;&#x5BF9;&#x8C61;&#x88AB;wait &#x7B49;&#x5F85;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;;
+    notifyall:&#x5524;&#x9192;&#x5F53;&#x524D;&#x5BF9;&#x8C61;&#x88AB;wait,&#x5524;&#x9192;&#x6240;&#x6709;&#x7684;&#x7EBF;&#x7A0B;&#xFF0C;&#x4F46;&#x662F;&#x5BF9;&#x8C61;&#x9501;&#x53EA;&#x6709;&#x4E00;&#x4E2A;,&#x6700;&#x7EC8;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#x3002;&#x5176;&#x4F59;&#x73B0;&#x5728;&#x5C31;&#x7EEA;&#x3002;
+
+4.&#x751F;&#x4EA7;&#x8005;&#x548C;&#x6D88;&#x8D39;&#x8005; 
+    a.&#x751F;&#x4EA7;&#x8005;&#x548C;&#x6D88;&#x8D39;&#x8005;&#x7EBF;&#x7A0B;
+    b.&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x64CD;&#x4F5C;&#x7684;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x8D44;&#x6E90;;
+</code></pre>
+<h2 id="&#x4E8C;&#x3001;&#x53CD;&#x5C04;reflection"><a name="&#x4E8C;&#x3001;&#x53CD;&#x5C04;reflection" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;&#x53CD;&#x5C04;reflection"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x3001;&#x53CD;&#x5C04;(Reflection)</h2>
+<pre class="language-"><code class="lang-xml">1.&#x53CD;&#x5C04;
+    &#x4E3B;&#x8981;&#x662F;&#x6307;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x3001;&#x68C0;&#x6D4B;&#x548C;&#x4FEE;&#x6539;&#x5B83;&#x672C;&#x8EAB;&#x72B6;&#x6001;&#x6216;&#x884C;&#x4E3A;&#x7684;&#x4E00;&#x79CD;&#x80FD;&#x529B;
+2.java&#x53CD;&#x5C04;
+    &#x662F;&#x5728;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#x4E2D;,&#x4E00;&#x4E2A;&#x7C7B;&#xFF0C;&#x90FD;&#x80FD;&#x591F;&#x77E5;&#x9053;&#x8FD9;&#x4E2A;&#x7C7B;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;;
+    &#x5BF9;&#x4E8E;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x90FD;&#x80FD;&#x591F;&#x8C03;&#x7528;&#x5B83;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;;
+    &#x8FD9;&#x79CD;&#x52A8;&#x6001;&#x83B7;&#x53D6;&#x7684;&#x4FE1;&#x606F;&#x4EE5;&#x53CA;&#x52A8;&#x6001;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x529F;&#x80FD;&#x79F0;&#x4E3A;java&#x8BED;&#x8A00;&#x7684;&#x53CD;&#x5C04;&#x673A;&#x5236;;
+
+3.&#x53CD;&#x5C04;&#x7684;&#x4F5C;&#x7528;
+    &#x901A;&#x8FC7;&#x5DF2;&#x77E5;&#x7684;&#x6761;&#x4EF6;(String&#x7684;&#x7C7B;&#x8DEF;&#x5F84;),&#x83B7;&#x53D6;&#x8BE5;&#x7C7B;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x4FE1;&#x606F;;
+    spring &#x4E2D;&#x7684;xml&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x4F7F;&#x7528;&#x4E86;&#x53CD;&#x5C04;&#x3002;
+
+    xml ===&gt;&#x89E3;&#x6790;xml(dom4j)
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>bean</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>xxx<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>com.hzit.Dept<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>prop</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>dname<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>&#x5F20;&#x4E09;<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>bean</span><span class="token punctuation">&gt;</span></span>
+
+4.Java&#x53CD;&#x5C04;&#x673A;&#x5236;&#x4E3B;&#x8981;&#x63D0;&#x4F9B;&#x4E86;&#x4EE5;&#x4E0B;&#x529F;&#x80FD;&#xFF1A;
+    &#x5728;&#x8FD0;&#x884C;&#x65F6;&#x6784;&#x9020;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;
+    &#x5728;&#x8FD0;&#x884C;&#x65F6;&#x83B7;&#x53D6;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x7C7B;&#x6240;&#x5177;&#x6709;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x548C;&#x65B9;&#x6CD5;(&#x5305;&#x62EC;&#x79C1;&#x6709;)
+    &#x5728;&#x8FD0;&#x884C;&#x65F6;&#x8C03;&#x7528;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#xFF08;&#x5C5E;&#x6027;&#xFF09;
+    &#x751F;&#x6210;&#x52A8;&#x6001;&#x4EE3;&#x7406;
+</code></pre>
+<h3 id="21-&#x53CD;&#x5C04;api"><a name="21-&#x53CD;&#x5C04;api" class="anchor-navigation-ex-anchor" href="#21-&#x53CD;&#x5C04;api"><i class="fa fa-link" aria-hidden="true"></i></a>2.1 &#x53CD;&#x5C04;API</h3>
+<pre class="language-"><code class="lang-xml">&#x5E38;&#x7528;&#x7684;&#x5305;:
+    java.lang.reflect;
+&#x5E38;&#x7528;&#x7684;&#x7C7B;:
+    Class:&#x8868;&#x793A;&#x53CD;&#x5C04;&#x7684;&#x6838;&#x5FC3;&#x7C7B;
+    Field:&#x8868;&#x793A;&#x5B57;&#x6BB5;
+    Method:&#x8868;&#x793A;&#x65B9;&#x6CD5;
+    Constructor:&#x8868;&#x793A;&#x6784;&#x9020;&#x5668;
+</code></pre>
+<h3 id="22-class&#x7C7B;"><a name="22-class&#x7C7B;" class="anchor-navigation-ex-anchor" href="#22-class&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2 Class&#x7C7B;</h3>
+<pre class="language-"><code class="lang-xml">1.&#x6982;&#x8FF0;
+    &#x5BF9;&#x8C61;&#x53CD;&#x5C04;&#x540E;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x7684;&#x4FE1;&#x606F;&#xFF1A;&#x67D0;&#x4E2A;&#x7C7B;&#x7684;&#x6570;&#x636E;&#x6210;&#x5458;&#x540D;&#x3001;&#x65B9;&#x6CD5;&#x548C;&#x6784;&#x9020;&#x5668;&#x3001;&#x67D0;&#x4E2A;&#x7C7B;&#x5230;&#x5E95;&#x5B9E;&#x73B0;&#x4E86;&#x54EA;&#x4E9B;&#x63A5;&#x53E3;&#x3002;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x7C7B;&#x800C;     &#x8A00;&#xFF0C;JRE &#x90FD;&#x4E3A;&#x5176;&#x4FDD;&#x7559;&#x4E00;&#x4E2A;&#x4E0D;&#x53D8;&#x7684; Class &#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x4E00;&#x4E2A; Class &#x5BF9;&#x8C61;&#x5305;&#x542B;&#x4E86;&#x7279;&#x5B9A;&#x67D0;&#x4E2A;&#x7C7B;&#x7684;&#x6709;&#x5173;&#x4FE1;&#x606F;&#x3002;
+
+2.&#x83B7;&#x53D6;Class&#x5BF9;&#x8C61;&#x7684;&#x4E09;&#x79CD;&#x65B9;&#x5F0F;
+    a.&#x7C7B;&#x540D;.class&#x5C5E;&#x6027;;
+    b.&#x5BF9;&#x8C61;&#x540D;.getClass()&#x65B9;&#x6CD5;
+    c.Class.forName(&#x7C7B;&#x7684;&#x5168;&#x8DEF;&#x5F84;(&#x5305;&#x540D;+&#x7C7B;&#x540D;)
+3.&#x5E38;&#x7528;&#x65B9;&#x6CD5;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6CD5;&#x540D;</th>
+<th>&#x529F;&#x80FD;&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>static Class forName(String name)</td>
+<td>&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x7C7B;&#x540D; name &#x7684; Class &#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>Object newInstance()</td>
+<td>&#x8C03;&#x7528;&#x7F3A;&#x7701;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x8FD4;&#x56DE;&#x8BE5;Class&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;</td>
+</tr>
+<tr>
+<td>getName()</td>
+<td>&#x8FD4;&#x56DE;&#x6B64;Class&#x5BF9;&#x8C61;&#x6240;&#x8868;&#x793A;&#x7684;&#x5B9E;&#x4F53;&#xFF08;&#x7C7B;&#x3001;&#x63A5;&#x53E3;&#x3001;&#x6570;&#x7EC4;&#x7C7B;&#x3001;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#x6216;void&#xFF09;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>Class getSuperClass()</td>
+<td>&#x8FD4;&#x56DE;&#x5F53;&#x524D;Class&#x5BF9;&#x8C61;&#x7684;&#x7236;&#x7C7B;&#x7684;Class&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>Class[]   getInterfaces()</td>
+<td>&#x83B7;&#x53D6;&#x5F53;&#x524D;Class&#x5BF9;&#x8C61;&#x7684;&#x63A5;&#x53E3;</td>
+</tr>
+<tr>
+<td>ClassLoader getClassLoader()</td>
+<td>&#x8FD4;&#x56DE;&#x8BE5;&#x7C7B;&#x7684;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;</td>
+</tr>
+</tbody>
+</table>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+        <span class="token comment">// com.hzit.bean.Person</span>
+
+        <span class="token comment">// 1.&#x83B7;&#x53D6;Class</span>
+        <span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span> clazz <span class="token operator">=</span> <span class="token class-name">Class</span><span class="token punctuation">.</span><span class="token function">forName</span><span class="token punctuation">(</span><span class="token string">&quot;com.hzit.bean.Student&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 2.&#x6839;&#x636E;Class newInstance&#x83B7;&#x53D6;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x5668;</span>
+        <span class="token class-name">Object</span> object <span class="token operator">=</span> clazz<span class="token punctuation">.</span><span class="token function">newInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x521B;&#x5EFA;&#x5B9E;&#x4F8B;&#xFF0C;&#x8C03;&#x7528;&#x65E0;&#x53C2;&#x6784;&#x9020;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>object<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 3.&#x83B7;&#x53D6;&#x540D;&#x79F0;</span>
+        <span class="token class-name">String</span> name <span class="token operator">=</span> clazz<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x7C7B;&#x8DEF;&#x5F84;&#xFF1A;&quot;</span> <span class="token operator">+</span> name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 4. &#x83B7;&#x53D6;&#x7236;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;</span>
+        <span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span> superclass <span class="token operator">=</span> clazz<span class="token punctuation">.</span><span class="token function">getSuperclass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x7236;&#x7C7B;&#x7684;&#x8DEF;&#x5F84;:&quot;</span> <span class="token operator">+</span> superclass<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 5.&#x83B7;&#x53D6;&#x6240;&#x6709;&#x7684;&#x63A5;&#x53E3;</span>
+        <span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">[</span><span class="token punctuation">]</span> interfaces <span class="token operator">=</span> clazz<span class="token punctuation">.</span><span class="token function">getInterfaces</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>interfaces<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span> class1 <span class="token operator">:</span> interfaces<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x7236;&#x63A5;&#x53E3;&#x7684;&#x540D;&#x79F0;:&quot;</span> <span class="token operator">+</span> class1<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// 6.&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7C7B;&#x7684;&#x5305;&#x540D;</span>
+        <span class="token class-name">Package</span> package1 <span class="token operator">=</span> clazz<span class="token punctuation">.</span><span class="token function">getPackage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5305;&#x540D;:&quot;</span> <span class="token operator">+</span> package1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<h4 id="1&#x53CD;&#x5C04;&#x6784;&#x9020;&#x65B9;&#x6CD5;"><a name="1&#x53CD;&#x5C04;&#x6784;&#x9020;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#1&#x53CD;&#x5C04;&#x6784;&#x9020;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.&#x53CD;&#x5C04;&#x6784;&#x9020;&#x65B9;&#x6CD5;</h4>
+<pre class="language-"><code class="lang-xml">Constructor &#x63D0;&#x4F9B;&#x5173;&#x4E8E;&#x7C7B;&#x7684;&#x5355;&#x4E2A;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x7684;&#x4FE1;&#x606F;&#x4EE5;&#x53CA;&#x5BF9;&#x5B83;&#x7684;&#x8BBF;&#x95EE;&#x6743;&#x9650;
+    newInstance(Object... initargs):&#x8C03;&#x7528;&#x6784;&#x9020;&#x65B9;&#x6CD5;
+</code></pre>
+<p><code>**AccessibleObject**</code></p>
+<p> &#x662F;Constructor, Field, Method &#x7684;&#x7236;&#x7C7B;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x53D6;&#x6D88;java &#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x8BBF;&#x95EE;&#x673A;&#x5236;;</p>
+<p>&#x8BA9;&#x4FEE;&#x9970;&#x7B26;&#x5931;&#x6548;&#x3002;&#x5BFC;&#x81F4;&#x79C1;&#x6709;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x88AB;&#x516C;&#x5F00;&#x8BBF;&#x95EE;&#x3002;</p>
+<p>&#x66B4;&#x529B;&#x7834;&#x89E3;:&#x4E00;&#x822C;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;</p>
+<p><code>**setAccessible**(boolean flag)</code>   true:&#x7834;&#x89E3;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span> clazz <span class="token operator">=</span> <span class="token class-name">Class</span><span class="token punctuation">.</span><span class="token function">forName</span><span class="token punctuation">(</span><span class="token string">&quot;com.hzit.bean.Student&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// Object newInstance = clazz.newInstance(); // &#x9ED8;&#x8BA4;&#x5348;&#x9910;&#x6784;&#x9020;</span>
+
+        <span class="token comment">// &#x83B7;&#x53D6; Constructor&#x5668;&#x5BF9;&#x8C61; &#xFF0C;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x624B;&#x52A8;&#x8C03;&#x7528;</span>
+        <span class="token comment">// 1.&#x83B7;&#x53D6;&#x53EA;&#x6709;&#x4E00;&#x4E2A;String&#x7C7B;&#x578B;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5; (&#x516C;&#x5171;&#x7684;&#x6784;&#x9020;)</span>
+<span class="token comment">//        Constructor&lt;?&gt; constructor = clazz.getConstructor(); // &#x83B7;&#x53D6;&#x53EA;&#x6709;&#x4E00;&#x4E2A;String&#x7C7B;&#x578B;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;</span>
+<span class="token comment">//        System.out.println(constructor);</span>
+<span class="token comment">//        constructor.newInstance(); // &#x8C03;&#x7528;&#x6307;&#x5B9A;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;</span>
+
+        <span class="token comment">// 2.&#x83B7;&#x53D6;&#x6240;&#x6709;&#x516C;&#x5171;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;</span>
+        <span class="token comment">// Constructor&lt;?&gt;[] constructors = clazz.getConstructors();</span>
+
+<span class="token comment">//        for (Constructor&lt;?&gt; constructor : constructors) {</span>
+<span class="token comment">//            Class&lt;?&gt;[] parameterTypes = constructor.getParameterTypes(); // &#x53C2;&#x6570;&#x7684;&#x7C7B;&#x578B;</span>
+<span class="token comment">//            System.out.println(&quot;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x7684;&#x540D;&#x79F0;:&quot; + constructor);</span>
+<span class="token comment">//            for (Class&lt;?&gt; class2 : parameterTypes) {</span>
+<span class="token comment">//                System.out.println(&quot;\t&#x5BF9;&#x5E94;&#x7684;&#x53C2;&#x6570;&#x7C7B;&#x578B;:&quot; + class2.getSimpleName());</span>
+<span class="token comment">//            }</span>
+<span class="token comment">//</span>
+<span class="token comment">//            if (parameterTypes.length == 0) { // &#x65E0;&#x53C2;&#x6784;&#x9020;</span>
+<span class="token comment">//                Object object = constructor.newInstance(); //&#x8C03;&#x7528;&#x65E0;&#x53C2;</span>
+<span class="token comment">//            }</span>
+<span class="token comment">//</span>
+<span class="token comment">//        }</span>
+
+        <span class="token comment">// 3.&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x7C7B;&#x578B;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5; &#x5305;&#x62EC;&#x516C;&#x5171;&#x548C;&#x79C1;&#x6709;&#x7684;</span>
+        <span class="token comment">// Constructor&lt;?&gt; declaredConstructor =</span>
+        <span class="token comment">// clazz.getDeclaredConstructor(String.class);</span>
+
+        <span class="token comment">// 4.&#x83B7;&#x53D6;&#x6240;&#x6709;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF0C;&#x5305;&#x62EC;&#x79C1;&#x6709;&#x7684;</span>
+        <span class="token class-name">Constructor</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">[</span><span class="token punctuation">]</span> declaredConstructors <span class="token operator">=</span> clazz<span class="token punctuation">.</span><span class="token function">getDeclaredConstructors</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name">Constructor</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span> constructor <span class="token operator">:</span> declaredConstructors<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">[</span><span class="token punctuation">]</span> parameterTypes <span class="token operator">=</span> constructor<span class="token punctuation">.</span><span class="token function">getParameterTypes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x53C2;&#x6570;&#x7684;&#x7C7B;&#x578B;</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x7684;&#x540D;&#x79F0;:&quot;</span> <span class="token operator">+</span> constructor<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span> class2 <span class="token operator">:</span> parameterTypes<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;\t&#x5BF9;&#x5E94;&#x7684;&#x53C2;&#x6570;&#x7C7B;&#x578B;:&quot;</span> <span class="token operator">+</span> class2<span class="token punctuation">.</span><span class="token function">getSimpleName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>parameterTypes<span class="token punctuation">.</span>length <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// &#x65E0;&#x53C2;&#x6784;&#x9020;</span>
+                <span class="token comment">// &#x79C1;&#x6709;&#x7684;&#x6784;&#x9020; &#x65E0;&#x6CD5;&#x8BBF;&#x95EE;</span>
+                <span class="token comment">// &#x66B4;&#x529B;&#x7834;&#x89E3;</span>
+                constructor<span class="token punctuation">.</span><span class="token function">setAccessible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token class-name">Object</span> object <span class="token operator">=</span> constructor<span class="token punctuation">.</span><span class="token function">newInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x8C03;&#x7528;&#x65E0;&#x53C2;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span>
+</code></pre>
+<h4 id="2&#x53CD;&#x5C04;&#x5C5E;&#x6027;"><a name="2&#x53CD;&#x5C04;&#x5C5E;&#x6027;" class="anchor-navigation-ex-anchor" href="#2&#x53CD;&#x5C04;&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>2.&#x53CD;&#x5C04;&#x5C5E;&#x6027;</h4>
+<pre class="language-"><code class="lang-xml">1.Class&#x4E2D;&#x548C;Field&#x5B57;&#x6BB5;&#x76F8;&#x5173;&#x7684;&#x65B9;&#x6CD5;
+    a.Field getField(String name) ;&#x6839;&#x636E;&#x6307;&#x5B9A;&#x540D;&#x79F0;&#x83B7;&#x53D6;&#x5B57;&#x6BB5;&#x3002;&#xFF08;&#x516C;&#x5171;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x672C;&#x7C7B;&#x6216;&#x8005;&#x7236;&#x7C7B;&#xFF09;
+    b.Field[] getFields();&#x83B7;&#x53D6;&#x6240;&#x6709;&#x5B57;&#x6BB5;&#x3002;&#xFF08;&#x516C;&#x5171;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x672C;&#x7C7B;&#x6216;&#x8005;&#x7236;&#x7C7B;&#xFF09;
+    c.Field getDeclaredField(String name);&#x6839;&#x636E;&#x6307;&#x5B9A;&#x540D;&#x79F0;&#x83B7;&#x53D6;&#x5B57;&#x6BB5;(&#x672C;&#x7C7B;&#x4E2D;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x5305;&#x62EC;&#x79C1;&#x6709;&#x7684;)
+    d.Field[] getDeclaredFields();&#x83B7;&#x53D6;&#x6240;&#x6709;&#x5B57;&#x6BB5;(&#x672C;&#x7C7B;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x5305;&#x62EC;&#x79C1;&#x6709;&#x7684;)
+
+2.Field&#x5B57;&#x6BB5;&#x4FE1;&#x606F;
+    Field &#x63D0;&#x4F9B;&#x6709;&#x5173;&#x7C7B;&#x6216;&#x63A5;&#x53E3;&#x7684;&#x5355;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x4FE1;&#x606F;
+&#x5E38;&#x7528;&#x7684;&#x65B9;&#x6CD5;:
+    get(Object obj) &#xFF1A;&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x5BF9;&#x8C61;&#x4E0A;&#x6B64; Field &#x8868;&#x793A;&#x7684;&#x5B57;&#x6BB5;&#x7684;&#x503C;
+    getXXX(Object obj); &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x7C7B;&#x578B;&#x6570;&#x636E; getInt(Object obj) 
+    setXXX(Object obj,xxx i);&#x7ED9;&#x8BE5;&#x5B57;&#x6BB5;&#x8BBE;&#x7F6E;&#x6307;&#x5B9A;&#x7684;&#x503C;
+</code></pre>
+<h4 id="3&#x53CD;&#x5C04;&#x65B9;&#x6CD5;"><a name="3&#x53CD;&#x5C04;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#3&#x53CD;&#x5C04;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>3.&#x53CD;&#x5C04;&#x65B9;&#x6CD5;</h4>
+<pre class="language-"><code class="lang-xml">1.Class&#x4E2D;&#x548C;&#x53CD;&#x5C04;&#x65B9;&#x6CD5;&#x76F8;&#x5173;&#x7684;&#x65B9;&#x6CD5;
+    a.Method getMethod(String name, Class<span class="token prolog">&lt;?&gt;... parameterTypes): &#x53C2;&#x6570;1&#xFF1A;&#x65B9;&#x6CD5;&#x540D; &#x53C2;&#x6570;2&#xFF1A;&#x53C2;&#x6570;&#x7C7B;&#x578B;
+    b.Method[] getMethods():&#x83B7;&#x53D6;&#x6240;&#x6709;&#x7684;&#x65B9;&#x6CD5;(&#x672C;&#x7C7B;&#x548C;&#x7236;&#x7C7B;&#x4E2D; &#x516C;&#x5171;&#x7684;&#x65B9;&#x6CD5;)
+    c.Method getDeclaredMethod(String name, Class&lt;?&gt;</span>... parameterTypes) :&#x672C;&#x7C7B;&#x4E2D;&#x6307;&#x5B9A;&#x65B9;&#x6CD5;(&#x79C1;&#x6709;)
+    d.Method[] getDeclaredMethods() &#x672C;&#x7C7B;&#x4E2D;&#x6240;&#x6709;&#x65B9;&#x6CD5;(&#x79C1;&#x6709;)
+
+2.Method&#x7C7B;&#x4E2D;&#x65B9;&#x6CD5;
+    invoke(Object obj, Object... args):&#x8C03;&#x7528;&#x65B9;&#x6CD5; &#x53C2;&#x6570;&#x4E8C;:&#x5B9E;&#x53C2;&#x5217;&#x8868;
+</code></pre>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x6700;&#x540E;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&#xFF1A;
+2019-08-20 23:38:12
+</span></footer>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style></body></html> <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> <script>     window.klipse_settings = {         selector: ".language-klipse, .lang-eval-clojure",         selector_eval_js: ".lang-eval-js",         selector_eval_python_client: ".lang-eval-python",         selector_eval_php: ".lang-eval-php",         selector_eval_scheme: ".lang-eval-scheme",         selector_eval_ruby: ".lang-eval-ruby",         selector_reagent: ".lang-reagent",        selector_google_charts: ".lang-google-chart",        selector_es2017: ".lang-eval-es2017",        selector_jsx: ".lang-eval-jsx",        selector_transpile_jsx: ".lang-transpile-jsx",        selector_render_jsx: ".lang-render-jsx",        selector_react: ".lang-react",        selector_eval_markdown: ".lang-render-markdown",        selector_eval_lambdaway: ".lang-render-lambdaway",        selector_eval_cpp: ".lang-eval-cpp",        selector_eval_html: ".lang-render-html",        selector_sql: ".lang-eval-sql",        selector_brainfuck: "lang-eval-brainfuck",        selector_js: ".lang-transpile-cljs"    }; </script> <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
+						
+					</section>
+					
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+				</div>
+			</div>
+			
+		</div>
+
+		
+		
+		<a href="../day17/day17.html" class="navigation navigation-prev " aria-label="Previous page: 第十七章:多线程二">
+			<i class="fa fa-angle-left"></i>
+		</a>
+		
+		
+		<a href="../day19/day19.html" class="navigation navigation-next " aria-label="Next page: 第十九章:枚举和注解">
+			<i class="fa fa-angle-right"></i>
+		</a>
+		
+		
+		
+	</div>
+	<script>
+		var gitbook = gitbook || [];
+		gitbook.push(function() {
+			gitbook.page.hasChanged({"page":{"title":"第十八章:反射","level":"1.19","depth":1,"next":{"title":"第十九章:枚举和注解","level":"1.20","depth":1,"path":"content/day19/day19.md","ref":"content/day19/day19.md","articles":[]},"previous":{"title":"第十七章:多线程二","level":"1.18","depth":1,"path":"content/day17/day17.md","ref":"content/day17/day17.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","-highlight","-lunr","-sharing","-search","search-pro","back-to-top-button","chapter-fold","expandable-chapters","splitter","page-treeview","anchor-navigation-ex","github","edit-link","popup","lightbox","hide-element","theme-fexa","tbfed-pagefooter","donate","copy-code-button","emphasize","klipse","pageview-count","auto-scroll-table","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"该文件最后修改时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"prism":{"css":["syntax-highlighting/assets/css/prism/prism-xonokai.css"]},"emphasize":{},"github":{"url":"https://github.com/hzittest/book_javase"},"livereload":{},"splitter":{},"search-pro":{},"auto-scroll-table":{},"popup":{},"theme-fexa":{"search-placeholder":"输入关键字搜索","logo":"./logo.png","favicon":"./favicon.ico"},"donate":{"title":"","button":"打赏","wechat":"https://github.com/LiangJunrong/document-library/blob/master/public-repertory/img/seek-reward.png?raw=true","alipay":"https://github.com/hzittest/book_javase/blob/master/content/images/alipay.jpg?raw=true","wechatText":"微信打赏","alipayText":"支付宝打赏"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":true,"mode":"float","showGoTop":false,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"lightbox":{"jquery":true},"back-to-top-button":{},"pageview-count":{},"copy-code-button":{},"klipse":{"myConfigKey":"it's the default value"},"edit-link":{"label":"编辑此页面","base":"https://github.com/hzittest/book_javase/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"expandable-chapters":{}},"theme":"default","author":"wwwshibapi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{"nav":[{"url":"http://www.baidu.com","target":"_blank","name":"简易教程"},{"url":"http://www.baidu.com","target":"_blank","name":"API帮助文档"},{"url":"http://www.baidu.com","target":"_blank","name":"高级java"},{"url":"http://www.baidu.com","target":"_blank","name":"测试文档"}]}},"title":"我的一本书","language":"zh-hans","links":{"sidebar":{"个性链接1":"https://www.baidu.com","个性链接2":"https://www.baidu.com"}},"gitbook":"*","description":"我第一本书的描述，很好"},"file":{"path":"content/day18/day18.md","mtime":"2019-08-20T15:38:12.097Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-20T15:48:39.898Z"},"basePath":"../..","book":{"language":""}});
+		});
+	</script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-fexa/fexa.js"></script>
+        
+    
+
+    </body>
+</html>
+
