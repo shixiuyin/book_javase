@@ -1,6 +1,6 @@
 {
 	"title": "我的一本书",
-	"author": "yu",
+	"author": "wwwshibapi",
 	"description": "我第一本书的描述，很好",
 	"language": "zh-hans",
 	"structure": {
@@ -76,10 +76,10 @@
 			"showGoTop": false
 		},
 		"github": {
-			"url": "https://github.com/hzittest/gitboot/tree/master/JavaSe"
+			"url": "https://github.com/hzittest/book_javase"
 		},
 		"edit-link": {
-			"base": "https://github.com/hzittest/gitboot/edit/master/JavaSe/",
+			"base": "https://github.com/hzittest/book_javase/edit/master",
 			"label": "编辑此页面"
 		},
 		"hide-element": {
