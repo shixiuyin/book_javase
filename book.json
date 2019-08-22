@@ -99,15 +99,15 @@
 			"button": "打赏",
 			"alipayText": "支付宝打赏",
 			"wechatText": "微信打赏",
-			"alipay": "https://github.com/hzittest/book_javase/blob/master/content/images/alipay.jpg?raw=true",
-			"wechat": "https://github.com/LiangJunrong/document-library/blob/master/public-repertory/img/seek-reward.png?raw=true"
+			"alipay": "https://github.com/hzittest/book_javase/blob/master/content/images/alipay2.jpg?raw=true",
+			"wechat": "https://github.com/shixiuyin/book_javase/blob/master/content/images/wecate.JPG?raw=true"
 		}
 
 
 	},
 	"links": {
 		"sidebar": {
-			"个性链接1": "https://www.baidu.com",
+			"个性链接1": "http://www.shibapi.com",
 			"个性链接2": "https://www.baidu.com"
 		}
 	},
