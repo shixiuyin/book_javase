@@ -13,12 +13,9 @@
 		"back-to-top-button",
 		"chapter-fold",
 		"expandable-chapters",
-		"splitter",
-		"page-treeview",
 		"anchor-navigation-ex",
 		"github",
 		"edit-link",
-		"popup",
 		"lightbox",
 		"hide-element",
 		"theme-fexa",
@@ -65,11 +62,6 @@
 		},
 		"anchor-navigation-ex": {
 			"isShowTocTitleIcon": true
-		},
-		"page-treeview": {
-			"copyright": "Copyright &#169; aleen42",
-			"minHeaderCount": "2",
-			"minHeaderDeep": "2"
 		},
 		"anchor-navigation-ex": {
 			"showLevel": false,
