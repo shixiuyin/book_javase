@@ -1,7 +1,7 @@
 {
-	"title": "我的一本书",
-	"author": "wwwshibapi",
-	"description": "我第一本书的描述，很好",
+	"title": "Java核心基础",
+	"author": "IT蚱蜢哥",
+	"description": "Java核心基础,Java快速入门,Java教程",
 	"language": "zh-hans",
 	"structure": {
 		"readme": "README.md"
@@ -127,8 +127,8 @@
 	},
 	"links": {
 		"sidebar": {
-			"个性链接1": "http://www.shibapi.com",
-			"个性链接2": "http://www.shibapi.com"
+			"主页": "http://www.shibapi.com",
+			"知乎": "https://www.zhihu.com/people/stone-91-87/activities"
 		}
 	},
 	"styles": {
