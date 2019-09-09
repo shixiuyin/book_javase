@@ -259,62 +259,40 @@ Java的动态性是其面向对象设计方法的拓展，它允许程序动态�
 - **JVM**:是**J**ava **V**itual **M**achine的缩写，它是java运行的虚拟机环境.
 - **JIT**:是**J**ava **I**n **T**ime的缩写，即java即时编译器，是JVM的一部分，属于内核部分。
 
-其中的JVM是java运行的虚拟机环境，它是Java运行环境的重要一环
 
-![1567786404093](img\java2.jpg)
+
+
 
 
 
 ## 三、Java环境搭建
 
+Oracle公司为Window,Linux,以及Mac等不同的平台提供完整的JDK(Java开发工具包)。并且一直在维护更新。官网提供最新的工具包下载。
 
+### 3.1 基本概念
 
-### 
+| 缩写    | 详细名称                             | 简介                                                         |
+| ------- | ------------------------------------ | ------------------------------------------------------------ |
+| **JDK** | **J**ava **D**evelop Tool**K**it     | Java开发工具包，很多java所编写的开发工具(如:javac.exe、jar.exe) |
+| **JRE** | **J**ava **R**untime **E**nvironment | java运行的基础，提供了java运行的API,必须有JRE才能正常运行    |
+| **JVM** | **J**ava **V**itual **M**achine      | 它是java运行的虚拟机环境                                     |
+| **JIT** | **J**ava **I**n **T**ime             | java即时编译器，是JVM的一部分，属于内核部分                  |
 
+其中的JVM是java运行的虚拟机环境，它是Java运行环境的重要一环。
 
+JDK包含了JRE,JRE包含了JVM，具体关系图如下。
 
-```xml
-步骤(记事本):
-	1.安装java运行环境(JDK)
-	2.编写源代码
-	3.编译源代码  javac
-	4.运行编译后的class文件 java
-```
-
-
-
-### 2.3编写第一个 Java应用程序
-
-``` xml
-实现步骤：
-1.什么是JDK, JRE
-2.下载及安装 JDK
-3.编写第一个 Java 应用程序
-	a.显示已知文件类型的扩展名
-	b.配置环境变量 path
-	c.main 方法和输出语句
-	d.注释
-	e.其它细节
-```
+![1567786404093](img\java2.jpg)
 
 
 
-#### 2.3.1 什么是JDK, JRE
-
-```java
-简单而言，使用  JDK  的提供的开发工具完成 java 程序的开发，使用 JRE 运行开发好的 Java 应用程序。
-
-JDK(Java Development Kit  Java开发工具包)：JDK是提供给 Java 开发人员使用的，其中包含了 java 的开发工具，也包括了JRE。所以安装了JDK，就不用在单独安装JRE了
-JRE(Java Runtime Environment  Java运行环境) ：包括Java虚拟机(JVM：Java Virtual Machine)和 Java 程序所需的核心类库等，如果想要运行一个开发好的Java程序，计算机中只需要安装JRE即可。
-
-JDK包含了JRE,JRE包含了JVM.
-```
 
 
+### 3.2 下载及安装 JDK
 
-#### 2.3.2 下载及安装 JDK
+#### 3.2.1 下载
 
-**下载：** 官方网址：
+官方网址：
 
 https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html、
 
@@ -330,18 +308,47 @@ https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.
 
 默认安装路径: C:\Program Files\Java
 
+![1568030300370](img\1568030300370.png)
 
 
-#### 2.3.3配置环境变量:
 
-```java
-第一步:打开-计算机-属性-高级系统设置-环境变量-系统变量
-第二步:进行配置（JAVA_HOME,PATH,CLASSPATH）
-	a.JAVA_HOME:另似给jdk全路径取一个别名。然后使用的时候直接使用别名
-	b.PATH:通过PATH,在DOS命令行找到对应的命令。java  javac 
-	c.CLASSPATH:JDK1.5之后，可以选择性安装，建议安装。最前面一定要配置一个.(点)
-参考配置如下:
-```
+#### 3.2.2  JDK安装目录介绍
+
+![1568030725186](img\1568030725186.png)
+
+
+
+| 目录                   | 简介                                                     |
+| ---------------------- | -------------------------------------------------------- |
+| **bin**                | JDK工具命令，JDK开发工具的可执行文件(java.exe,javac.exe) |
+| **include**            | 用于编译本地方法的文件                                   |
+| **jre**                | java运行时环境文件                                       |
+| **lib**                | 类库文件，存放的是JDK工具命令的实际执行程序              |
+| **src.zip**            | 该压缩文件里面存放的就是Java所有核心类库的源代码         |
+| **javafx-src.zip**     | JavaFX源代码                                             |
+| **COPYRIGHT和LICENSE** | COPYRIGHT和LICENSE为版权和签证的说明性文档。             |
+
+
+
+### 3.3配置环境变量
+
+#### 3.3.1第一步
+
+> 打开-计算机-属性-高级系统设置-环境变量-系统变量
+
+![1568031683987](img\1568031683987.png)
+
+
+
+#### 3.3.2第二步
+
+配置解析（JAVA_HOME,PATH,CLASSPATH）
+
+- JAVA_HOME:另似给jdk全路径取一个别名。然后使用的时候直接使用别名
+- PATH:通过PATH,在DOS命令行找到对应的命令。java  javac 
+- CLASSPATH:JDK1.5之后，可以选择性安装，建议安装。最前面一定要配置一个.(点)
+
+具体配置:
 
 ```java
 JAVA_HOME = C:\Program Files\Java\jdk1.8.0_73
@@ -349,19 +356,53 @@ PATH = %JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
 CLASSPATH = .;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
 ```
 
-#### 2.3.4 显示已知文件的扩展名
+![1568032153253](img\1568032153253.png)
 
-查看本地地方文件夹
+
+
+#### 3.3.3 测试
+
+![1568032371281](img\1568032371281.png)
+
+
+
+## 四、HelloWorld第一个程序
+
+
+
+### 4.1 显示已知文件的扩展名
+
+很多电脑，默认是无法查看和修改后缀名的。可以通过文件夹设置进行调节。方便后面修改想要的后缀。一下提高了win10 和 win7两种系统的设置方式。
+
+**win10系统:**
 
 ![1552234976867](img\file.png)
 
+**win7系统:**
+
+![1568032800634](img\1568032800634.png)
 
 
-#### 2.3.5编写源代码
 
-1.创建文本文件修改后缀为.java；**例如:HelloWrold.java**
 
-2.文件名必须和源代码中的class类名保持一致
+
+
+
+### 4.2 编写源代码
+
+
+
+#### 4.2.1 创建文件
+
+在电脑的任意路径下创建文件，例如在`D:\java`创建<mark>HelloWorld.java</mark>
+
+![1568033373635](img\1568033373635.png)
+
+
+
+#### 4.2.2 编写源代码
+
+文件名必须和源代码中的class类名保持一致
 
 ```java
 //HelloWorld由于被public 修饰，所有必须和文件名保持一致
@@ -374,7 +415,9 @@ public class HelloWorld{
 }
 ```
 
-3.具体细节如下:
+
+
+#### 4.2.3.具体细节如下:
 
 ``` xml
 - main的方法：
@@ -389,7 +432,7 @@ public class HelloWorld{
 - Java方法由一条条语句构成，每个语句以分号结束。
 ```
 
-4.java注释
+#### 4.2.4.java注释
 
 注释：用于解释说明程序的文字、提高了代码的阅读性
 
@@ -403,26 +446,27 @@ Java中的注释类型：
 
 注释是一个程序员必须要具有的良好编程习惯。将自己的思想通过注释先整理出来，再用代码去体现
 
-``` xml
-单行注释
-	格式： //注释文字
-多行注释
-	格式： 	/*  注释文字 */
-对于单行和多行注释，被注释的文字，不会被JVM（java虚拟机）解释执行。多行注释里面不允许有多行注释嵌套。
-```
+![1568033516855](img\1568033516855.png)
 
 
 
 #### 2.3.6 编译
 
-java提供了javac命令用于编译：
+java提供了<kbd>javac</kbd>命令用于编译：
 
-```java
 编译HelloWorld.java文件，编译成功会生成HelloWorld.class文件
- - javac HelloWorld.java
-运行
- - java HelloWorld
-```
+
+![1568033662597](img\1568033662597.png)
+
+
+
+java 提供了<kbd>java</kbd>命令用于执行class文件:
+
+![1568033764809](img\1568033764809.png)
+
+到此，java的环境变量和第一个<mark>HelloWorld</mark>入门程序已经搞定。
+
+
 
 ### 4.4案例
 
